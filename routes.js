@@ -1,6 +1,6 @@
 const routes = require('next-routes')();
 
-// routes
+routes;
 //     //  ('url', 'location of file to display on url')
 //     .add('/campaigns/new', '/campaigns/new')
 //     .add('/campaigns/:address', '/campaigns/show')
