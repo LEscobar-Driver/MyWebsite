@@ -1,5 +1,5 @@
 import React from 'react';
-// import Header from './Header.js';
+import Header from './Header.js';
 // import Footer from './Footer.js';
 import Head from 'next/head';
 import { Container, Popup, Button, Image, Message } from 'semantic-ui-react';
@@ -9,7 +9,7 @@ export default (props) => {
 
     return(
         <div>            
-            {/* <Header/>             */}
+            <Header/>            
             <style>{`
                 html, body {
                     background-color: #252839 !important;
