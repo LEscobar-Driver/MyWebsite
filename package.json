@@ -1,0 +1,31 @@
+{
+  "name": "MyWebsite",
+  "version": "1.0.0",
+  "description": "A collection of my work",
+  "main": "index.js",
+  "scripts": {
+    "start": "next start -p $PORT",
+    "heroku-postbuild": "next build",
+    "dev": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LEscobar-Driver/MyWebsite.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LEscobar-Driver/MyWebsite/issues"
+  },
+  "homepage": "https://github.com/LEscobar-Driver/MyWebsite#readme",
+  "dependencies": {
+    "fs-extra": "^7.0.1",
+    "next": "^4.2.3",
+    "next-routes": "^1.4.2",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^0.84.0"
+  }
+}
