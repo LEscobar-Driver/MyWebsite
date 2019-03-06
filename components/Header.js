@@ -36,8 +36,8 @@ class Header extends Component {
                 </Menu.Item>
 
                 <Menu.Menu position="right" >
-                    <Dropdown as="a" className="item" simple text="My Code" direction="left" selection>
-                        <Dropdown.Menu style={{ marginRight: '5px' }}>
+                    <Dropdown as="a" item simple text="My Code" direction="left" selection="true">
+                        <Dropdown.Menu style={{ marginRight: '0px' }}>
 
                             <Link route="#middle">
                                 {/* <Dropdown.Item onClick={this.handleJS} icon='js' text='JavaScript' /> */}
