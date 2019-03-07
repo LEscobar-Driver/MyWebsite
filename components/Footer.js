@@ -27,31 +27,71 @@ class Footer extends Component {
         message: ""
     };
 
-    handleJS = () => {
-        return( <Link route="#middle"></Link> );
+    handleName = () => {
+        if (this.state.name.length > 2 && this.state.name !== '') {
+            return false;
+        }
+        let errMsg = this.state.errorMessage + "\nInvalid Name value.";
+        this.setState({ errorMessage: errMsg});
+        return true;
     };
 
-    handleCPlusPlus = () => {
-        return( <Link route="#middle"></Link> );
+    handleMessage = () => {
+        if (this.state.message.length > 10 && this.state.message !== '') {
+            return false;
+        }
+        let errMsg = this.state.errorMessage + "\nInvalid message value.";
+        this.setState({ errorMessage: errMsg});
+        return true;
     };
 
-    handlePython = () => {
-        return( <Link route="#middle"></Link> );
+    handleEmail = () => {
+        let re = /\S+@\S+\.\S+/i;
+        console.log(`re.test(this.state.email) ${re.test(String(this.state.email)).toString()}`)
+
+        // if (this.state.email.length > 4 && this.state.email !== '' && re.test(String(this.state.email))) {
+        if ( re.test(String(this.state.email)) ) {
+            return false;
+        }
+        let errMsg = this.state.errorMessage + "\nInvalid email value.";
+        this.setState({ errorMessage: errMsg});
+        return true;
     };
 
-    handleSolidity = () => {
-        return( <Link route="#middle"></Link> );
-    };
+    onSubmit = async (event) => {
+        event.preventDefault();
 
-    onSubmit = () => {
-        console.log('\n\nI AM IN THE ONSUBMIT HANDLER\n\n');
+        await this.setState({ errorMessage: "", 
+                              emailError: false,
+                              nameError: false,
+                              msgError: false
+        });
+
+        await this.setState({ nameError: this.handleName(),
+                              msgError: this.handleMessage(),
+                              emailError: this.handleEmail()
+        });
+
+        if(this.state.errorMessage !== "") {
+            this.setState({ hidden: false});
+        }
+
+        console.log(`\n\nthis.state.name ${this.state.name}`);
+        console.log(`this.state.email ${this.state.email}`);
+        console.log(`this.state.message ${this.state.message}`);
+        console.log(`this.state.errorMessage ${this.state.errorMessage}\n\n`);
     };
 
     handleDismiss = () => {
         this.setState({ hidden: false });
 
         setTimeout( () => {
-            this.setState({ errorMessage: "", hidden: true })
+            this.setState({ errorMessage: "", 
+                            hidden: true,
+                            emailError: false,
+                            nameError: false,
+                            msgError: false
+            })
         }, 90);
     };
 
