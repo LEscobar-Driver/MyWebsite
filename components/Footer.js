@@ -1,17 +1,30 @@
 import React, { Component } from 'react';
-import { Grid, Image, Segment, List, Container, Header, Divider, Form, Message, Button } from 'semantic-ui-react';
+import { Grid, 
+    Image, 
+    Input,
+    Segment, 
+    List, 
+    Container, 
+    Header, 
+    Divider, 
+    Form, 
+    Icon,
+    Message, 
+    Button } from 'semantic-ui-react';
 import { Link } from '../routes';
 
 class Footer extends Component {
     state = {
-        nameError: false,
-        emailError: false,
-        msgError: false,
-        submitSuccess: true,
+        errorMessage: "",
+
+        hidden: true,
+        msgError:false,
+        nameError:false,
+        emailError:false,
+
         name: "",
         email: "",
-        msg: "",
-        number: ""
+        message: ""
     };
 
     handleJS = () => {
@@ -30,10 +43,23 @@ class Footer extends Component {
         return( <Link route="#middle"></Link> );
     };
 
+    onSubmit = () => {
+        console.log('\n\nI AM IN THE ONSUBMIT HANDLER\n\n');
+    };
+
+    handleDismiss = () => {
+        this.setState({ hidden: false });
+
+        setTimeout( () => {
+            this.setState({ errorMessage: "", hidden: true })
+        }, 90);
+    };
+
     render() {
         return(
+
             <Segment inverted vertical style={{ margin: '20em 0em 0em', padding: '5em 0em' }}>
-            <Container textAlign="center">
+                <Container textAlign="center">
 
                 <Grid divided inverted stackable>
 
@@ -53,7 +79,7 @@ class Footer extends Component {
 
                                 <List.Item>
                                     <Link route="/">
-                                        <a>Contact Us</a>
+                                        <a>Contact me</a>
                                     </Link>
                                 </List.Item>
                                 
@@ -74,24 +100,54 @@ class Footer extends Component {
                                 <h4>Do you have questions? Go ahead and send me a message.</h4>
                             </div>
 
-                            <Form style={{ marginLeft: '65px', marginTop: '20px' }} inverted >
-
+                            <Form style={{ marginLeft: '65px', marginTop: '20px' }} inverted onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
                                 <Form.Group widths='equal'>
-                                    <Form.Input  label='Name' placeholder='Name' />
-                                    <Form.Input  label='Email' placeholder='Email' />
+
+                                    <Form.Field error={!!this.state.nameError}>
+                                        <label>Name</label>
+                                        <Input 
+                                            placeholder="Your name"
+                                            value={this.state.name}
+                                            onChange={ (event) => {
+                                                this.setState({ name: event.target.value });
+                                            }}>
+                                        </Input>
+                                    </Form.Field>
+
+                                    <Form.Field error={!!this.state.emailError}>
+                                        <label>Email</label>
+                                        <Input 
+                                            placeholder="Your email"
+                                            value={this.state.email}
+                                            onChange={ (event) => {
+                                                this.setState({ email: event.target.value });
+                                            }}>
+                                        </Input>
+                                    </Form.Field>
+
                                 </Form.Group>
-                                
-                                <Form.Input  label='Phone Number' placeholder='Number' />
-                                <Form.TextArea label='Message' placeholder='Message' />
-                                <Message success header='Form Completed' content="You're all signed up for the newsletter" />
-                                <Button>Submit</Button>
-                            
+
+                                <Form.TextArea
+                                    error={!!this.state.msgError}
+                                    autoHeight
+                                    rows={3}
+                                    label="Message"
+                                    placeholder="Tell me more"
+                                    value={this.state.message}
+                                    onChange={ (event) => {
+                                        this.setState({ message: event.target.value });
+                                    }}
+                                />
+                                <Message error hidden={this.state.hidden} header="Opps!" content={this.state.errorMessage} onDismiss={this.handleDismiss}></Message>
+                                <Button primary={true}>Submit</Button>
                             </Form>
                         </div>
                     </Grid.Column>
+
                 </Grid>
             </Container>
        </Segment>
+       
         );
     }
 }
