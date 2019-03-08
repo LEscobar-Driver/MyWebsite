@@ -22,6 +22,13 @@ export default (props) => {
                     <link rel="shortcut icon" type="image/x-icon" href="../static/assets/favicon.ico" />
                     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css"/>                    
                     <title>Luis Driver</title>
+
+                    {/* <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+                    <script type="text/javascript">
+                        {function(){
+                            emailjs.init("user_SF89V0WjfaZHFMIGFFeif");
+                        }}();
+                    </script> */}
                 </Head>
 
                 {/* <div style={{ marginTop: '50px' }}></div>  */}

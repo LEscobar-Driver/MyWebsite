@@ -72,14 +72,31 @@ class Footer extends Component {
                               emailError: this.handleEmail()
         });
 
-        if(this.state.errorMessage !== "") {
-            this.setState({ hidden: false});
-        }
-
         console.log(`\n\nthis.state.name ${this.state.name}`);
         console.log(`this.state.email ${this.state.email}`);
         console.log(`this.state.message ${this.state.message}`);
         console.log(`this.state.errorMessage ${this.state.errorMessage}\n\n`);
+
+        if (this.state.errorMessage === "") {
+            try {
+                emailjs.init("user_SF89V0WjfaZHFMIGFFeif");
+                let service_id = "default_service";
+                let template_id = "template_FKK9klm2";
+                let templateParams = {
+                    from_name: this.state.name,
+                    reply_to: this.state.email,
+                    message_html: this.state.message,
+                    to_name: "Luis Escobar-Driver"
+                };
+
+                await emailjs.send(service_id, template_id, templateParams);
+
+            } catch (err) {
+                console.log("ERROR ONSUBMIT:", err.message);
+            }
+        } else {
+            this.setState({ hidden: false});
+        }
     };
 
     handleDismiss = () => {
@@ -128,6 +145,10 @@ class Footer extends Component {
                                         <a>Top of page</a>
                                     </Link>
                                 </List.Item>
+
+                                <List.Item>
+                                    <a href="mailto:l.driver.escobar@gmail.com">email me here!</a>
+                                </List.Item>
                             </List>
                         </div>
                     </Grid.Column>
@@ -140,7 +161,7 @@ class Footer extends Component {
                                 <h4>Do you have questions? Go ahead and send me a message.</h4>
                             </div>
 
-                            <Form style={{ marginLeft: '65px', marginTop: '20px' }} inverted onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
+                            <Form id="contractMe" style={{ marginLeft: '65px', marginTop: '20px' }} inverted onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
                                 <Form.Group widths='equal'>
 
                                     <Form.Field error={!!this.state.nameError}>
@@ -185,8 +206,18 @@ class Footer extends Component {
                     </Grid.Column>
 
                 </Grid>
+
+                <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+                <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
+                {/* <script type="text/javascript">
+                {function(){
+                    emailjs.init("user_SF89V0WjfaZHFMIGFFeif");
+                }}();
+                </script> */}
             </Container>
        </Segment>
+
        
         );
     }
