@@ -23,12 +23,8 @@ export default (props) => {
                     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css"/>                    
                     <title>Luis Driver</title>
 
-                    {/* <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-                    <script type="text/javascript">
-                        {function(){
-                            emailjs.init("user_SF89V0WjfaZHFMIGFFeif");
-                        }}();
-                    </script> */}
+                    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
                 </Head>
 
                 {/* <div style={{ marginTop: '50px' }}></div>  */}

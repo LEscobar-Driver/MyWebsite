@@ -79,7 +79,8 @@ class Footer extends Component {
 
         if (this.state.errorMessage === "") {
             try {
-                emailjs.init("user_SF89V0WjfaZHFMIGFFeif");
+                await emailjs.init("user_SF89V0WjfaZHFMIGFFeif");
+
                 let service_id = "default_service";
                 let template_id = "template_FKK9klm2";
                 let templateParams = {
@@ -90,13 +91,20 @@ class Footer extends Component {
                 };
 
                 await emailjs.send(service_id, template_id, templateParams);
+                alert("Sent!");
 
             } catch (err) {
                 console.log("ERROR ONSUBMIT:", err.message);
+                alert(`Error: ${err.message}`);
             }
         } else {
             this.setState({ hidden: false});
         }
+
+        await this.setState({ name: "",
+                              email: "",
+                              message: ""
+        });
     };
 
     handleDismiss = () => {
@@ -116,6 +124,10 @@ class Footer extends Component {
         return(
 
             <Segment inverted vertical style={{ margin: '20em 0em 0em', padding: '5em 0em' }}>
+
+                {/* <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script> */}
+
                 <Container textAlign="center">
 
                 <Grid divided inverted stackable>
@@ -207,14 +219,8 @@ class Footer extends Component {
 
                 </Grid>
 
-                <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-
-                <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script>
-                {/* <script type="text/javascript">
-                {function(){
-                    emailjs.init("user_SF89V0WjfaZHFMIGFFeif");
-                }}();
-                </script> */}
+                {/* <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+                <script type="text/javascript" src="https://cdn.emailjs.com/sdk/2.3.2/email.min.js"></script> */}
             </Container>
        </Segment>
 
