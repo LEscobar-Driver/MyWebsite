@@ -37,7 +37,7 @@ class Footer extends Component {
     };
 
     handleMessage = () => {
-        if (this.state.message.length > 10 && this.state.message !== '') {
+        if (this.state.message.length > 5 && this.state.message !== '') {
             return false;
         }
         let errMsg = this.state.errorMessage + "\nInvalid message value.";
@@ -93,6 +93,11 @@ class Footer extends Component {
                 await emailjs.send(service_id, template_id, templateParams);
                 alert("Sent!");
 
+                await this.setState({ name: "",
+                              email: "",
+                              message: ""
+        });
+
             } catch (err) {
                 console.log("ERROR ONSUBMIT:", err.message);
                 alert(`Error: ${err.message}`);
@@ -101,10 +106,7 @@ class Footer extends Component {
             this.setState({ hidden: false});
         }
 
-        await this.setState({ name: "",
-                              email: "",
-                              message: ""
-        });
+        
     };
 
     handleDismiss = () => {
@@ -141,8 +143,8 @@ class Footer extends Component {
                         <div style={{ marginTop: '15px', marginRight: '240px' }}>
                             <List horizontal inverted divided  size='small'>
                                 <List.Item>
-                                    <Link route="/">
-                                        <a>Source Code</a>
+                                    <Link href="https://github.com/LEscobar-Driver/MyWebsite">
+                                        <a target="_blank">Source Code</a>
                                     </Link>
                                 </List.Item>
 
@@ -158,9 +160,9 @@ class Footer extends Component {
                                     </Link>
                                 </List.Item>
 
-                                <List.Item>
+                                {/* <List.Item>
                                     <a href="mailto:l.driver.escobar@gmail.com">email me here!</a>
-                                </List.Item>
+                                </List.Item> */}
                             </List>
                         </div>
                     </Grid.Column>

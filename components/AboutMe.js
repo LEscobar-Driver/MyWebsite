@@ -3,7 +3,7 @@ import { Menu, Image, Dropdown } from 'semantic-ui-react';
 import { Link, Router } from '../routes';
 
 
-class Header extends Component {
+class Aboutme extends Component {
     state = {
 
     };
@@ -39,7 +39,7 @@ class Header extends Component {
                     <Dropdown as="a" item simple text="My Code" direction="left" selection="true">
                         <Dropdown.Menu style={{ marginRight: '0px' }}>
 
-                            <Link route="#JS-Section">
+                            <Link route="#middle">
                                 {/* <Dropdown.Item onClick={this.handleJS} icon='js' text='JavaScript' /> */}
                                 <Dropdown.Item onClick={this.handleJS} image="../static/assets/nodejs.png" text='JavaScript' />
                                 {/* <Dropdown.Item>
@@ -48,17 +48,17 @@ class Header extends Component {
                                 </Dropdown.Item> */}
                             </Link>
 
-                            <Link route="#Python-Section">
+                            <Link route="#middle">
                                 {/* <Dropdown.Item icon='python' text='Python' /> */}
                                 <Dropdown.Item image="../static/assets/python.png" text='Python' />
                             </Link>
 
-                            <Link route="#C++-Section">
+                            <Link route="#middle">
                                 {/* <Dropdown.Item icon="code" text='C++' /> */}
                                 <Dropdown.Item image="../static/assets/cplusplus.png" text='C++' />
                             </Link>
 
-                            <Link route="#Solidity-Section">
+                            <Link route="#middle">
                                 {/* <Dropdown.Item icon='ethereum' text='Solidity' /> */}
                                 <Dropdown.Item image="../static/assets/sol.png" text='Solidity' />
                             </Link>
@@ -70,35 +70,4 @@ class Header extends Component {
         );
     }
 }
-export default Header;
-
-
-
-// export default () => {
-//     return(
-//         <Menu fixed='top' inverted>
-//             <Menu.Item as="a" header>
-//                 <Link route="/" as="a">
-//                     <a>
-//                         <div>
-//                             <Image alt=" " avatar size="mini" src='../static/dPen.png' style={{ marginRight: '20px' }}></Image>
-//                             <b>Decentralized Kickstarter</b>
-//                         </div>
-//                     </a>
-//                 </Link>
-//             </Menu.Item>
-
-//             <Menu.Menu position="right">
-
-//                 <Link route="/">
-//                     <a className="item">Home</a>
-//                 </Link>
-
-//                 <Link route="/campaigns/new">
-//                     <a className="item">+</a>
-//                 </Link>
-
-//             </Menu.Menu>
-//         </Menu>
-//     );  
-// };
+export default Aboutme;
