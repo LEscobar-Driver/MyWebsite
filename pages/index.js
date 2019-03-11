@@ -14,7 +14,59 @@ class CampaignIndex extends Component {
             <div style={{"color":"white"}} id="C++-Section">c++ section</div>
             <div style={{"color":"white"}} id="Solidity-Section">sol section</div>
 
-            <Grid divided="vertically">
+            <div id="AboutMe"></div>
+            <Grid celled> 
+                <Grid.Row>
+                    <Grid.Column width={3}>
+                        <Image src="../static/assets/aboutMe.jpg"/>
+                    </Grid.Column>
+
+                    <Grid.Column width={9}>
+                        <p style={{"color":"white", "font-size":"27px", "font-weight":"bold"}}>
+                            Hi There
+                            <span style={{"color":"red"}}>!</span>
+                            <br></br> 
+                            <span style={{"padding":"15px"}}></span> I
+                            <span style={{"color":"red"}}>'</span>
+                            m Luis
+                            <span style={{"color":"red"}}>.</span>
+                            <br></br>                         
+                        </p>
+                        <p>
+                            <span style={{"color":"white", "font-size":"17px"}}>I am a freelance 
+                            <span style={{"color":"red"}}> Blockchain Developer</span> and a professional 
+                            <span style={{"color":"red"}}> Software QA Engineer</span>.
+                            </span>
+                        </p>
+                        {/* <h1 style={{"color":"white"}}>Hi there!</h1>
+                        <h3 style={{"color":"white"}}>I'm Luis.</h3>
+                        <h3 style={{"color":"red"}}>'</h3> */}
+                    </Grid.Column>
+
+                    <Grid.Column width={4}>
+                        <List style={{"color":"white", marginTop: '35px'}} as="h2">
+                            <List.Item>
+                                Current Location : <span style={{"color":"green"}}>California</span>
+                            </List.Item>
+                            <List.Item>
+                                Phone : <span style={{"color":"green"}}>714-222-8402</span>
+                            </List.Item>
+                            <List.Item>
+                                Email: <span style={{"color":"green"}}>blockchain.engineer.qa@gmail.com</span>
+                            </List.Item>
+                            <List.Item>
+                                Git: 
+                                <Link route="https://github.com/LEscobar-Driver">
+                                    <a target="_blank" style={{"color":"green"}}> github.com/LEscobar-Driver</a>
+                                </Link>
+                            </List.Item>
+                        </List>
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
+
+
+            <Grid divided="vertically" >
 
                 <Grid.Row columns={4}>
                     <Grid.Column>
@@ -717,7 +769,101 @@ class CampaignIndex extends Component {
                         <p style={{"color":"white"}}>
                             Users must pay a .001 eth fee to enter the lottery. Randomness is deteremined by a 
                             keccak function which takes the current block difficulty, the current time, & and 
-                            the amount of players in the lottery. The contract owner picks the winner. 
+                            the amount of players in the lottery. The contract owner is the only address that can 
+                            trigger the pickWinner() function. 
+                        </p>
+                    </Grid.Column>
+                </Grid.Row>
+
+
+                <Grid.Row columns={4}>
+                    <Grid.Column>
+                        <Card fluid>
+                            <Image size="small" centered src="../static/assets/authenticating.png"></Image>
+                            <Card.Content>
+                                <Card.Header>Authenticating Test Suite</Card.Header>
+                                <Card.Meta>Python unittest, xmlrunner, & Docker</Card.Meta>
+                                <Card.Description>Unittest suite testing api endpoints. 22 tests total.</Card.Description>
+                                <div style={{ marginTop: '10px' }}>
+                                    <Link route="https://github.com/LEscobar-Driver/Authenticating/tree/master/src/qa">
+                                        <a target="_blank">Source Code</a>
+                                    </Link>
+                                </div>
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+
+                    <Grid.Column>
+                        <List bulleted style={{"color":"white"}} as="h2">
+                            <List.Item>
+                                Professional python automated unittest suite with xmlrunner. 
+                            </List.Item>
+                            <List.Item>
+                                Dockerized python unittest scripts.
+                            </List.Item>
+                            <List.Item>
+                                A suite of 22 unittest, testing api endpoints from other devs.
+                            </List.Item>
+                        </List>
+
+                        <p style={{"color":"white"}}>
+                            Some of my professional work. These automated python unittest are dockerized to fit 
+                            into CI (continuous integration) lifecycle. The purpose of these endpoints tests are to 
+                            ensure that these inhouse facial recognition endpoints perform as expected. Includes 22 unittest 
+                            which hit our developement end points. Data to run unittest has been excluded for 
+                            security concerns. 
+                        </p>
+                    </Grid.Column>
+
+                    <Grid.Column>
+                    </Grid.Column>
+
+                    <Grid.Column>                    
+                    </Grid.Column>
+                </Grid.Row>
+
+
+                <Grid.Row columns={4}>
+                    <Grid.Column>
+                    </Grid.Column>
+
+                    <Grid.Column>                    
+                    </Grid.Column>
+
+                    <Grid.Column>
+                        <Card fluid>
+                            <Image size="medium" centered src="../static/assets/fliptix.png"></Image>
+                            <Card.Content>
+                                <Card.Header>FlipTix Test Suite</Card.Header>
+                                <Card.Meta>Python unittest, xmlrunner, & Docker</Card.Meta>
+                                <Card.Description>Unittest suite testing api endpoints. 10 tests total.</Card.Description>
+                                <div style={{ marginTop: '10px' }}>
+                                    <Link route="https://github.com/LEscobar-Driver/FlipTix/tree/master/src/qa">
+                                        <a target="_blank">Source Code</a>
+                                    </Link>
+                                </div>
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+
+                    <Grid.Column>
+                        <List bulleted style={{"color":"white"}} as="h2">
+                            <List.Item>
+                                Professional python automated unittest suite. 
+                            </List.Item>
+                            <List.Item>
+                                Dockerized python unittest.
+                            </List.Item>
+                            <List.Item>
+                                A suite of 10 unittest, testing api endpoints from other devs.
+                            </List.Item>
+                        </List>
+
+                        <p style={{"color":"white"}}>
+                            Some of my professional work. These automated python unittest are dockerized to fit 
+                            into CI (continuous integration) lifecycle. These unittest were developed by me to 
+                            test our inhouse fliptix application which we engineered for a client. The app allows 
+                            users to purchase tickets and resell them. 
                         </p>
                     </Grid.Column>
                 </Grid.Row>

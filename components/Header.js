@@ -36,36 +36,33 @@ class Header extends Component {
                 </Menu.Item>
 
                 <Menu.Menu position="right" >
+                
+                    <Link route="#AboutMe">
+                        <a className="item">About Me</a>
+                    </Link>
+
                     <Dropdown as="a" item simple text="My Code" direction="left" selection="true">
                         <Dropdown.Menu style={{ marginRight: '0px' }}>
-
                             <Link route="#JS-Section">
-                                {/* <Dropdown.Item onClick={this.handleJS} icon='js' text='JavaScript' /> */}
                                 <Dropdown.Item onClick={this.handleJS} image="../static/assets/nodejs.png" text='JavaScript' />
-                                {/* <Dropdown.Item>
-                                    <Image size="huge" src='../static/assets/nodejs.png'></Image>
-                                    JavaScript
-                                </Dropdown.Item> */}
                             </Link>
 
                             <Link route="#Python-Section">
-                                {/* <Dropdown.Item icon='python' text='Python' /> */}
                                 <Dropdown.Item image="../static/assets/python.png" text='Python' />
                             </Link>
 
                             <Link route="#C++-Section">
-                                {/* <Dropdown.Item icon="code" text='C++' /> */}
                                 <Dropdown.Item image="../static/assets/cplusplus.png" text='C++' />
                             </Link>
 
                             <Link route="#Solidity-Section">
-                                {/* <Dropdown.Item icon='ethereum' text='Solidity' /> */}
                                 <Dropdown.Item image="../static/assets/sol.png" text='Solidity' />
                             </Link>
-                            
                         </Dropdown.Menu>
                     </Dropdown>
+
                 </Menu.Menu>
+
             </Menu>
         );
     }
