@@ -633,6 +633,96 @@ class CampaignIndex extends Component {
                 </Grid.Row>
 
 
+                <Grid.Row columns={4}>
+                    <Grid.Column>
+                        <Card fluid>
+                            <Image  src="../static/assets/blockchainAPI.png"></Image>
+                            <Card.Content>
+                                <Card.Header>PoW Python Blockchain</Card.Header>
+                                <Card.Meta>Proof of Work Blockchain & API</Card.Meta>
+                                <Card.Description>A Python PoW blockchain with an API suite.</Card.Description>
+                                <div style={{ marginTop: '10px' }}>
+                                    <Link route="https://github.com/LEscobar-Driver/BlockchainProject">
+                                        <a target="_blank">Source Code</a>
+                                    </Link>
+                                </div>
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+
+                    <Grid.Column>
+                        <List bulleted style={{"color":"white"}} as="h2">
+                            <List.Item>
+                                A PoW blockchain built from scratch.
+                            </List.Item>
+                            <List.Item>
+                                Powered by Python.
+                            </List.Item>
+                            <List.Item>
+                                Includes a RESTful API suite.
+                            </List.Item>
+                            <List.Item>
+                                Hashlib, uuid, flask, requests, & time.
+                            </List.Item>
+                        </List>
+
+                        <p style={{"color":"white"}}>
+                            A user can register a node, get the valid chain, resolve consensus conflicts,
+                            generate new blocks, generate new transactions, get the last block, mine the chain, &
+                            get the full blockchain.
+                        </p>
+                    </Grid.Column>
+
+                    <Grid.Column>
+                    </Grid.Column>
+
+                    <Grid.Column>                    
+                    </Grid.Column>
+                </Grid.Row>
+
+
+                <Grid.Row columns={4}>
+                    <Grid.Column>
+                    </Grid.Column>
+
+                    <Grid.Column>                    
+                    </Grid.Column>
+
+                    <Grid.Column>
+                        <Card fluid>
+                            <Image size="small" centered src="../static/assets/lottery.png"></Image>
+                            <Card.Content>
+                                <Card.Header>Lottery Smart Contract</Card.Header>
+                                <Card.Meta>Ethereum & Solidity</Card.Meta>
+                                <Card.Description>Deployed to Rinkeby testnet.</Card.Description>
+                                <div style={{ marginTop: '10px' }}>
+                                    <Link route="https://github.com/LEscobar-Driver/Lottery">
+                                        <a target="_blank">Source Code</a>
+                                    </Link>
+                                </div>
+                            </Card.Content>
+                        </Card>
+                    </Grid.Column>
+
+                    <Grid.Column>
+                        <List bulleted style={{"color":"white"}} as="h2">
+                            <List.Item>
+                                Custom compile & deploy scripts.
+                            </List.Item>
+                            <List.Item>
+                                Test coverage included.
+                            </List.Item>
+                        </List>
+
+                        <p style={{"color":"white"}}>
+                            Users must pay a .001 eth fee to enter the lottery. Randomness is deteremined by a 
+                            keccak function which takes the current block difficulty, the current time, & and 
+                            the amount of players in the lottery. The contract owner picks the winner. 
+                        </p>
+                    </Grid.Column>
+                </Grid.Row>
+
+
                 
 
 
