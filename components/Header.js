@@ -36,12 +36,20 @@ class Header extends Component {
                 </Menu.Item>
 
                 <Menu.Menu position="right" >
-                
+
                     <Link route="#AboutMe">
                         <a className="item">About Me</a>
                     </Link>
 
-                    <Dropdown as="a" item simple text="My Code" direction="left" selection="true">
+                    <Link route="#Skills">
+                        <a className="item">Skills</a>
+                    </Link>
+
+                    <Link route="#Contact">
+                        <a className="item">Contact</a>
+                    </Link>
+
+                    <Dropdown as="a" item simple text="My Portfolio" direction="left" selection="true">
                         <Dropdown.Menu style={{ marginRight: '0px' }}>
                             <Link route="#JS-Section">
                                 <Dropdown.Item onClick={this.handleJS} image="../static/assets/nodejs.png" text='JavaScript' />

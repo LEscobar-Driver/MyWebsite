@@ -166,9 +166,9 @@ class Footer extends Component {
                             </List>
                         </div>
                     </Grid.Column>
-
+                    
                     <Grid.Column width={8}>
-                        <div style={{ marginLeft: '50px' }}>
+                        <div id="Contact" style={{ marginLeft: '50px' }}>
 
                             <div style={{ marginLeft: '55px' }}>
                                 <Header inverted as='h2' content='Contact' />

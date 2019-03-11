@@ -38,9 +38,6 @@ class CampaignIndex extends Component {
                             <span style={{"color":"red"}}> Software QA Engineer</span>.
                             </span>
                         </p>
-                        {/* <h1 style={{"color":"white"}}>Hi there!</h1>
-                        <h3 style={{"color":"white"}}>I'm Luis.</h3>
-                        <h3 style={{"color":"red"}}>'</h3> */}
                     </Grid.Column>
 
                     <Grid.Column width={4}>
@@ -52,15 +49,47 @@ class CampaignIndex extends Component {
                                 Phone : <span style={{"color":"green"}}>714-222-8402</span>
                             </List.Item>
                             <List.Item>
-                                Email: <span style={{"color":"green"}}>blockchain.engineer.qa@gmail.com</span>
+                                Email : <span style={{"color":"green"}}>blockchain.engineer.qa@gmail.com</span>
                             </List.Item>
                             <List.Item>
-                                Git: 
+                                Git : 
                                 <Link route="https://github.com/LEscobar-Driver">
                                     <a target="_blank" style={{"color":"green"}}> github.com/LEscobar-Driver</a>
                                 </Link>
                             </List.Item>
                         </List>
+                    </Grid.Column>
+                </Grid.Row>
+            </Grid>
+
+
+            <div id="Skills" style={{"marginTop":"150px" }}></div>
+            <Grid celled> 
+                <Grid.Row>
+                    <Grid.Column width={12}>
+                        <span style={{"color":"white", "padding":"400px", "font-size":"27px", "font-weight":"bold"}}>Skills</span>
+                        <List style={{"color":"white", marginTop: '30px'}} as="h2">
+                            <List.Item>
+                                Software Efficiency Tools : <span style={{"color":"green"}}>Trello, Aha, JIRA.</span>
+                            </List.Item>
+                            <List.Item>
+                                Professional QA Tools : <span style={{"color":"green"}}>Python Unittest, Selenium, Docker.</span>
+                            </List.Item>
+                            <List.Item>
+                                Blockchain Tools : <span style={{"color":"green"}}>Open Zepplin, Ganache, Truffle, Remix, Metamask, Infura, Mocha.</span>
+                            </List.Item>
+                            <List.Item>
+                                Programming Proficiencies : <span style={{"color":"green"}}>C++, NodeJS, JavaScript, Python, Solidity, React, JSX, HTML, SQL, Shell.</span>
+                            </List.Item>
+                            <List.Item>
+                                Misc. Software Tools : <span style={{"color":"green"}}>Jenkins, Linux, GitKraken, SourceTree, CMD line.</span>
+                            </List.Item>
+
+                        </List>
+                    </Grid.Column>
+
+                    <Grid.Column width={4}>
+                        <Image style={{"marginTop":"12px"}} size="large" src="../static/assets/skills.png"/>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>
@@ -867,56 +896,6 @@ class CampaignIndex extends Component {
                         </p>
                     </Grid.Column>
                 </Grid.Row>
-
-
-                
-
-
-
-
-                <Grid.Row columns={4}>
-                    <Grid.Column>
-                    </Grid.Column>
-                    
-                    <Grid.Column>                    
-                    </Grid.Column>
-                    <Grid.Column>
-                        <Image size="tiny" src="../static/assets/cplusplus.png"></Image>
-                    </Grid.Column>
-
-                    <Grid.Column>
-                        <div id="C++-Section">c++ section</div>
-                    </Grid.Column>
-                </Grid.Row>
-
-                <Grid.Row columns={4}>
-                    <Grid.Column>
-                        <Image size="tiny" src="../static/assets/python.png"></Image>
-                    </Grid.Column>
-
-                    <Grid.Column>
-                        <div id="Python-Section">Python Section</div>
-                        <p>This is a test, how does it look</p>
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
-
-            <Grid divided="vertically" stretched>
-                <Grid.Row columns={4}>
-                    <Grid.Column>
-                        <Image size="tiny" src="../static/assets/sol.png"></Image>
-                    </Grid.Column>
-
-                    <Grid.Column>
-                        <div id="Solidity-Section">sol section</div>
-                    </Grid.Column>
-                </Grid.Row>
-
-
-
-
-
-
             </Grid>
         </Layout>
         );
