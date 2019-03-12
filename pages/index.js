@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
-import { Card, Button, Popup, Image, Dimmer, Header, Icon, Grid, List } from 'semantic-ui-react';
+import { Card, Button, Popup, Image, Dimmer, Header, Icon, Grid, List} from 'semantic-ui-react';
 import Layout from '../components/Layout.js';
 import { Link, Router } from '../routes';
+import AboutMe from '../components/AboutMe.js';
 
 
 class CampaignIndex extends Component {
@@ -15,60 +16,14 @@ class CampaignIndex extends Component {
             <div style={{"color":"white"}} id="Solidity-Section">sol section</div>
 
             <div id="AboutMe"></div>
-            <Grid celled> 
-                <Grid.Row>
-                    <Grid.Column width={3}>
-                        <Image src="../static/assets/aboutMe.jpg"/>
-                    </Grid.Column>
-
-                    <Grid.Column width={9}>
-                        <p style={{"color":"white", "font-size":"27px", "font-weight":"bold"}}>
-                            Hi There
-                            <span style={{"color":"red"}}>!</span>
-                            <br></br> 
-                            <span style={{"padding":"15px"}}></span> I
-                            <span style={{"color":"red"}}>'</span>
-                            m Luis
-                            <span style={{"color":"red"}}>.</span>
-                            <br></br>                         
-                        </p>
-                        <p>
-                            <span style={{"color":"white", "font-size":"17px"}}>I am a freelance 
-                            <span style={{"color":"red"}}> Blockchain Developer</span> and a professional 
-                            <span style={{"color":"red"}}> Software QA Engineer</span>.
-                            </span>
-                        </p>
-                    </Grid.Column>
-
-                    <Grid.Column width={4}>
-                        <List style={{"color":"white", marginTop: '35px'}} as="h2">
-                            <List.Item>
-                                Current Location : <span style={{"color":"green"}}>California</span>
-                            </List.Item>
-                            <List.Item>
-                                Phone : <span style={{"color":"green"}}>714-222-8402</span>
-                            </List.Item>
-                            <List.Item>
-                                Email : <span style={{"color":"green"}}>blockchain.engineer.qa@gmail.com</span>
-                            </List.Item>
-                            <List.Item>
-                                Git : 
-                                <Link route="https://github.com/LEscobar-Driver">
-                                    <a target="_blank" style={{"color":"green"}}> github.com/LEscobar-Driver</a>
-                                </Link>
-                            </List.Item>
-                        </List>
-                    </Grid.Column>
-                </Grid.Row>
-            </Grid>
-
-
-            <div id="Skills" style={{"marginTop":"150px" }}></div>
+            <AboutMe/>
+            
+            <div id="Skills"></div>
             <Grid celled> 
                 <Grid.Row>
                     <Grid.Column width={12}>
                         <span style={{"color":"white", "padding":"400px", "font-size":"27px", "font-weight":"bold"}}>Skills</span>
-                        <List style={{"color":"white", marginTop: '30px'}} as="h2">
+                        <List style={{"color":"white"}} as="h2">
                             <List.Item>
                                 Software Efficiency Tools : <span style={{"color":"green"}}>Trello, Aha, JIRA.</span>
                             </List.Item>
