@@ -8,6 +8,12 @@ export default () => {
        <Grid divided="vertically">
             <Grid.Row columns={4}>
                 <Grid.Column>
+                </Grid.Column>
+
+                <Grid.Column>                    
+                </Grid.Column>
+
+                <Grid.Column>
                     <Card fluid>
                         <Image size="small" centered src="../static/assets/authenticating.png"></Image>
                         <Card.Content>
@@ -44,22 +50,10 @@ export default () => {
                         security concerns. 
                     </p>
                 </Grid.Column>
-
-                <Grid.Column>
-                </Grid.Column>
-
-                <Grid.Column>                    
-                </Grid.Column>
             </Grid.Row>
 
 
             <Grid.Row columns={4}>
-                <Grid.Column>
-                </Grid.Column>
-
-                <Grid.Column>                    
-                </Grid.Column>
-
                 <Grid.Column>
                     <Card fluid>
                         <Image size="medium" centered src="../static/assets/fliptix.png"></Image>
@@ -95,6 +89,12 @@ export default () => {
                         test our inhouse fliptix application which we engineered for a client. The app allows 
                         users to purchase tickets and resell them. 
                     </p>
+                </Grid.Column>
+
+                <Grid.Column>
+                </Grid.Column>
+
+                <Grid.Column>                    
                 </Grid.Column>
             </Grid.Row>
        </Grid>

@@ -61,6 +61,12 @@ export default () => {
             
             <Grid.Row columns={4}>
                 <Grid.Column>
+                </Grid.Column>
+
+                <Grid.Column>                    
+                </Grid.Column>
+
+                <Grid.Column>
                     <Card fluid>
                         <Image  src="../static/assets/blockchainAPI.png"></Image>
                         <Card.Content>
@@ -98,22 +104,10 @@ export default () => {
                         get the full blockchain.
                     </p>
                 </Grid.Column>
-
-                <Grid.Column>
-                </Grid.Column>
-
-                <Grid.Column>                    
-                </Grid.Column>
             </Grid.Row>
 
 
             <Grid.Row columns={4}>
-                <Grid.Column>
-                </Grid.Column>
-
-                <Grid.Column>                    
-                </Grid.Column>
-
                 <Grid.Column>
                     <Card fluid>
                         <Image size="small" centered src="../static/assets/lottery.png"></Image>
@@ -152,6 +146,12 @@ export default () => {
                         the amount of players in the lottery. The contract owner is the only address that can 
                         trigger the pickWinner() function. 
                     </p>
+                </Grid.Column>
+
+                <Grid.Column>
+                </Grid.Column>
+
+                <Grid.Column>                    
                 </Grid.Column>
             </Grid.Row>
 

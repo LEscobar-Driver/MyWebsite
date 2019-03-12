@@ -190,6 +190,12 @@ export default () => {
 
             <Grid.Row columns={4}>
                 <Grid.Column>
+                </Grid.Column>
+
+                <Grid.Column>                    
+                </Grid.Column>
+
+                <Grid.Column>
                     <Card fluid>
                         <Image size="small" centered src="../static/assets/vol.png"></Image>
                         <Card.Content>
@@ -223,22 +229,10 @@ export default () => {
                         A demonstration of how to use Folium & Pandas to generate interesting data driven maps.
                     </p>
                 </Grid.Column>
-
-                <Grid.Column>
-                </Grid.Column>
-
-                <Grid.Column>                    
-                </Grid.Column>
             </Grid.Row>
 
 
             <Grid.Row columns={4}>
-                <Grid.Column>
-                </Grid.Column>
-
-                <Grid.Column>                    
-                </Grid.Column>
-
                 <Grid.Column>
                     <Card fluid>
                         <Image size="small" centered src="../static/assets/password.png"></Image>
@@ -272,10 +266,22 @@ export default () => {
                         in secure computing environments (tails) where keys can get very big.
                     </p>
                 </Grid.Column>
+
+                <Grid.Column>
+                </Grid.Column>
+
+                <Grid.Column>                    
+                </Grid.Column>
             </Grid.Row>
 
 
             <Grid.Row columns={4}>
+                <Grid.Column>
+                </Grid.Column>
+
+                <Grid.Column>                    
+                </Grid.Column>
+
                 <Grid.Column>
                     <Card fluid>
                         <Image size="small" centered src="../static/assets/fileFinder.png"></Image>
@@ -307,21 +313,10 @@ export default () => {
                         A user is able to search for any file on any OS. 
                     </p>
                 </Grid.Column>
-
-                <Grid.Column>
-                </Grid.Column>
-
-                <Grid.Column>                    
-                </Grid.Column>
             </Grid.Row>
 
 
             <Grid.Row columns={4}>
-                <Grid.Column>
-                </Grid.Column>
-
-                <Grid.Column>                    
-                </Grid.Column>
                 <Grid.Column>
                     <Card fluid>
                         <Image size="small" centered src="../static/assets/weather.png"></Image>
@@ -357,6 +352,12 @@ export default () => {
                         humidity, location of forecast, sun rise time, future forcast in 3 hour increments, rain report,
                         snow report & the daily forcast.
                     </p>
+                </Grid.Column>
+
+                <Grid.Column>
+                </Grid.Column>
+
+                <Grid.Column>                    
                 </Grid.Column>
             </Grid.Row>
 
