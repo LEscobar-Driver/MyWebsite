@@ -63,8 +63,12 @@ class Header extends Component {
                                 <Dropdown.Item image="../static/assets/cplusplus.png" text='C++' />
                             </Link>
 
-                            <Link route="#Solidity-Section">
-                                <Dropdown.Item image="../static/assets/sol.png" text='Solidity' />
+                            <Link route="#Blockchain">
+                                <Dropdown.Item image="../static/assets/sol.png" text='Blockchain' />
+                            </Link>
+
+                            <Link route="#QA">
+                                <Dropdown.Item image="../static/assets/qaEngine.png" text='Professional QA' />
                             </Link>
                         </Dropdown.Menu>
                     </Dropdown>

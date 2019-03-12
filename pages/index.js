@@ -4,7 +4,8 @@ import Layout from '../components/Layout.js';
 import { Link, Router } from '../routes';
 import AboutMe from '../components/AboutMe.js';
 import Skills from '../components/Skills.js';
-
+import Qa from "../components/Qa.js";
+import BlockChain from '../components/Blockchain.js';
 
 class CampaignIndex extends Component {
 
@@ -105,7 +106,7 @@ class CampaignIndex extends Component {
                 </Grid.Row>
 
 
-                <Grid.Row columns={4}>
+                {/* <Grid.Row columns={4}>
                     <Grid.Column>
                         <Card fluid>
                             <Image src="../static/assets/dPen.png"></Image>
@@ -154,10 +155,10 @@ class CampaignIndex extends Component {
 
                     <Grid.Column>                    
                     </Grid.Column>
-                </Grid.Row>
+                </Grid.Row> */}
 
 
-                <Grid.Row columns={4}>
+                {/* <Grid.Row columns={4}>
                     <Grid.Column>
                     </Grid.Column>
 
@@ -199,7 +200,7 @@ class CampaignIndex extends Component {
                             App Front-ends & Web3.js
                         </p>
                     </Grid.Column>
-                </Grid.Row>
+                </Grid.Row> */}
 
 
                 <Grid.Row columns={4}>
@@ -299,7 +300,7 @@ class CampaignIndex extends Component {
                 </Grid.Row>
 
 
-                <Grid.Row columns={4}>
+                {/* <Grid.Row columns={4}>
                     <Grid.Column>
                         <Card fluid>
                             <Image src="../static/assets/cryptoMarket.png"></Image>
@@ -338,7 +339,7 @@ class CampaignIndex extends Component {
 
                     <Grid.Column>                    
                     </Grid.Column>
-                </Grid.Row>
+                </Grid.Row> */}
 
 
                 <Grid.Row columns={4}>
@@ -674,7 +675,7 @@ class CampaignIndex extends Component {
                 </Grid.Row>
 
 
-                <Grid.Row columns={4}>
+                {/* <Grid.Row columns={4}>
                     <Grid.Column>
                         <Card fluid>
                             <Image  src="../static/assets/blockchainAPI.png"></Image>
@@ -719,10 +720,10 @@ class CampaignIndex extends Component {
 
                     <Grid.Column>                    
                     </Grid.Column>
-                </Grid.Row>
+                </Grid.Row> */}
 
 
-                <Grid.Row columns={4}>
+                {/* <Grid.Row columns={4}>
                     <Grid.Column>
                     </Grid.Column>
 
@@ -762,10 +763,10 @@ class CampaignIndex extends Component {
                             trigger the pickWinner() function. 
                         </p>
                     </Grid.Column>
-                </Grid.Row>
+                </Grid.Row> */}
 
 
-                <Grid.Row columns={4}>
+                {/* <Grid.Row columns={4}>
                     <Grid.Column>
                         <Card fluid>
                             <Image size="small" centered src="../static/assets/authenticating.png"></Image>
@@ -855,8 +856,17 @@ class CampaignIndex extends Component {
                             users to purchase tickets and resell them. 
                         </p>
                     </Grid.Column>
-                </Grid.Row>
+                </Grid.Row> */}
             </Grid>
+            
+            <div id="Blockchain"></div>
+            <BlockChain/>
+
+            <div id="QA"></div>
+            <Qa/>
+
+
+
         </Layout>
         );
     }

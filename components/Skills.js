@@ -16,7 +16,7 @@ class Aboutme extends Component {
                                 Software Efficiency Tools : <span style={{"color":"green"}}>Trello, Aha, JIRA.</span>
                             </List.Item>
                             <List.Item>
-                                Professional QA Tools : <span style={{"color":"green"}}>Python Unittest, Selenium, Docker.</span>
+                                Professional QA Tools : <span style={{"color":"green"}}>Python Unittest, Selenium, Requests, Docker.</span>
                             </List.Item>
                             <List.Item>
                                 Blockchain Tools : <span style={{"color":"green"}}>Open Zepplin, Ganache, Truffle, Remix, Metamask, Infura, Mocha.</span>
