@@ -51,12 +51,13 @@ class Header extends Component {
 
                     <Dropdown as="a" item simple text="My Portfolio" direction="left" selection="true">
                         <Dropdown.Menu style={{ marginRight: '0px' }}>
-                            <Link route="#JS-Section">
-                                <Dropdown.Item onClick={this.handleJS} image="../static/assets/nodejs.png" text='JavaScript' />
-                            </Link>
 
                             <Link route="#Python-Section">
                                 <Dropdown.Item image="../static/assets/python.png" text='Python' />
+                            </Link>
+
+                            <Link route="#JS-Section">
+                                <Dropdown.Item onClick={this.handleJS} image="../static/assets/nodejs.png" text='JavaScript' />
                             </Link>
 
                             <Link route="#Cplusplus">

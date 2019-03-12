@@ -20,7 +20,7 @@ export default () => {
                         <Card.Content>
                             <Card.Header>Phone & Email Extractor</Card.Header>
                             <Card.Meta>pyperclip demonstration</Card.Meta>
-                            <Card.Description>Python code allows a user to copy text with mouse and analysis for patterns</Card.Description>
+                            <Card.Description>Python code allows a user to copy text with mouse clipboard and analysis for patterns.</Card.Description>
                             <div style={{ marginTop: '10px' }}>
                                 <Link route="https://github.com/LEscobar-Driver/Code/blob/master/Python/Regex%20Mechanics/regexMainProject.py">
                                     <a target="_blank">Source Code</a>
@@ -33,19 +33,19 @@ export default () => {
                 <Grid.Column>
                     <List bulleted style={{"color":"white"}} as="h2">
                         <List.Item>
-                            Backend python code. pyperclip.
+                            Backend python code.
                         </List.Item>
                         <List.Item>
-                            Pyperclip.
+                            Pyperclip code demonstration.
                         </List.Item>
                         <List.Item>
-                            Extracts all emails and phone numbers.
+                            Extracts all emails and phone numbers from clipboard.
                         </List.Item>
                     </List>
 
                     <p style={{"color":"white"}}>
                         A python backend tool I built to extract phone numbers and emails by copying text with a mouse
-                        or keyboard. The user copies the text and runs this code. Any matches found are printed into
+                        clipboard or keyboard. The user copies the text and runs this code. Any matches found are printed into
                         the console.
                     </p>
                 </Grid.Column>
@@ -58,8 +58,8 @@ export default () => {
                         <Image size="small" centered src="../static/assets/dict.png"></Image>
                         <Card.Content>
                             <Card.Header>Dictionary Word Finder</Card.Header>
-                            <Card.Meta>difflib demonstration</Card.Meta>
-                            <Card.Description>Returns definition of any word typed into console.</Card.Description>
+                            <Card.Meta>Python Difflib demonstration</Card.Meta>
+                            <Card.Description>Returns definition of any word typed into console or best matches.</Card.Description>
                             <div style={{ marginTop: '10px' }}>
                                 <Link route="https://github.com/LEscobar-Driver/Code/blob/master/Python/DictWordFinder.py">
                                     <a target="_blank">Source Code</a>
@@ -72,16 +72,22 @@ export default () => {
                 <Grid.Column>
                     <List bulleted style={{"color":"white"}} as="h2">
                         <List.Item>
-                            Backend python code. Corrects for user misspelled words.
+                            Backend python code.
                         </List.Item>
                         <List.Item>
-                            Difflib.
+                            Corrects for user misspelled words. Returns 6 matches total with a 75% 
+                            similarity rating.
+                        </List.Item>
+                        <List.Item>
+                            Demonstrate how the difflib python library is a great tool for comparing text and 
+                            producing reports.
                         </List.Item>
                     </List>
 
                     <p style={{"color":"white"}}>
                         A python backend tool. A user runs the program through their console. If a word is misspelled the 
-                        program returns 6 potential corrections with a 75% match. 
+                        program returns 6 potential corrections with a 75% match. Returns the definitoin of whatever 
+                        word the user typed into their console.
                     </p>
                 </Grid.Column>
 
@@ -119,16 +125,21 @@ export default () => {
                 <Grid.Column>
                     <List bulleted style={{"color":"white"}} as="h2">
                         <List.Item>
-                            Backend python code. Uses the US Geological Service for its data feed.
+                            Backend python code.
                         </List.Item>
                         <List.Item>
-                            Very simply and effective back end tool for seeing global earthquake data.
+                            Uses the US Geological Service for its data feed. Demonstrates how to use public 
+                            facing APIs to extract valuable data. Prints data into the user console in a clear 
+                            format.
+                        </List.Item>
+                        <List.Item>
+                            Compact and effective back end tool for seeing global earthquakes.
                         </List.Item>
                     </List>
 
                     <p style={{"color":"white"}}>
                         A user runs this backend code through their console. The code prints out small, medium, & 
-                        large earthquakes in a clean format. 
+                        large earthquakes that have occured in the current month. 
                     </p>
                 </Grid.Column>
             </Grid.Row>
@@ -139,9 +150,9 @@ export default () => {
                     <Card fluid>
                         <Image size="small" centered src="../static/assets/facialRec.png"></Image>
                         <Card.Content>
-                            <Card.Header>Facial Recognition</Card.Header>
-                            <Card.Meta>Comparision between 2 images</Card.Meta>
-                            <Card.Description>Returns T/F if the 2 images are the same person</Card.Description>
+                            <Card.Header>Image Recognition</Card.Header>
+                            <Card.Meta>Comparision between two images</Card.Meta>
+                            <Card.Description>Python demonstration on how to work with images and compare images.</Card.Description>
                             <div style={{ marginTop: '10px' }}>
                                 <Link route="https://github.com/LEscobar-Driver/Code/blob/master/Python/FacialRecognition.py">
                                     <a target="_blank">Source Code</a>
@@ -157,7 +168,9 @@ export default () => {
                             Backend python code.
                         </List.Item>
                         <List.Item>
-                            Converts pictures into bytes for processing.
+                            Demonstrates how to work with images in Python. Image data conversion are done to process 
+                            image data in a managable format. The user has the option to manipulate an images height & width.
+                            User receives a reponse from an api that specializes in these comparisions.
                         </List.Item>
                     </List>
 
@@ -181,8 +194,8 @@ export default () => {
                         <Image size="small" centered src="../static/assets/vol.png"></Image>
                         <Card.Content>
                             <Card.Header>Volcano Mapper</Card.Header>
-                            <Card.Meta>Python Pandas & Folium</Card.Meta>
-                            <Card.Description>Maps all North American Volcanoes according to height.</Card.Description>
+                            <Card.Meta>Pandas & Folium demonstration</Card.Meta>
+                            <Card.Description>Maps all North American Volcanoes and color codes them on a map.</Card.Description>
                             <div style={{ marginTop: '10px' }}>
                                 <Link route="https://github.com/LEscobar-Driver/Code/blob/master/Python/NAVolcanoMap.py">
                                     <a target="_blank">Source Code</a>
@@ -195,17 +208,19 @@ export default () => {
                 <Grid.Column>
                     <List bulleted style={{"color":"white"}} as="h2">
                         <List.Item>
-                            Backend python code which uses Pandas & Folium. Run through a users console.
+                            Backend python code.
                         </List.Item>
                         <List.Item>
-                            Returns a map which is saved on the users HD.
+                            Returns a map named "Map1.html" which the user can open and see all North American volcanoes 
+                            categorized by their height in either green, orange, or red.
+                        </List.Item>
+                        <List.Item>
+                            Uses Folium & Pandas.
                         </List.Item>
                     </List>
 
                     <p style={{"color":"white"}}>
-                        Returned map contains a descriptive google map of all 
-                        NA volcanoes. The volcanoes are color coded according to their
-                        height.
+                        A demonstration of how to use Folium & Pandas to generate interesting data driven maps.
                     </p>
                 </Grid.Column>
 
@@ -229,7 +244,7 @@ export default () => {
                         <Image size="small" centered src="../static/assets/password.png"></Image>
                         <Card.Content>
                             <Card.Header>Insecure Password Manager</Card.Header>
-                            <Card.Meta>Python Pyperclip & CMD</Card.Meta>
+                            <Card.Meta> Pyperclip demonstration</Card.Meta>
                             <Card.Description>Returns a users password to their clipboard.</Card.Description>
                             <div style={{ marginTop: '10px' }}>
                                 <Link route="https://github.com/LEscobar-Driver/Code/blob/master/Python/PasswordManager.py">
@@ -243,7 +258,7 @@ export default () => {
                 <Grid.Column>
                     <List bulleted style={{"color":"white"}} as="h2">
                         <List.Item>
-                            Backend python code which uses Pyperclip & the commond line.
+                            Backend python code.
                         </List.Item>
                         <List.Item>
                             The program returns the users password to their clipboard. Can save any length or 
@@ -252,8 +267,9 @@ export default () => {
                     </List>
 
                     <p style={{"color":"white"}}>
-                        A user runs this program through their command line. A user runs this program and types in 
-                        the password they would like to received. The password is returned via the users clipboard.
+                        A user runs this program through their command line. A user runs this program like "python dict.py email".
+                        In this case the password for "email" would be returned to the users clipboard. User can make sure of this 
+                        in secure computing environments (tails) where keys can get very big.
                     </p>
                 </Grid.Column>
             </Grid.Row>
@@ -265,7 +281,7 @@ export default () => {
                         <Image size="small" centered src="../static/assets/fileFinder.png"></Image>
                         <Card.Content>
                             <Card.Header>File Finder</Card.Header>
-                            <Card.Meta>Python - OS agnostic</Card.Meta>
+                            <Card.Meta>OS agnostic file finder</Card.Meta>
                             <Card.Description>Allows the user to look for any file on any OS.</Card.Description>
                             <div style={{ marginTop: '10px' }}>
                                 <Link route="https://github.com/LEscobar-Driver/Code/blob/master/Python/file_search.py">
@@ -279,15 +295,16 @@ export default () => {
                 <Grid.Column>
                     <List bulleted style={{"color":"white"}} as="h2">
                         <List.Item>
-                            Backend python code. User runs the program through their command line.
+                            Backend python code.
                         </List.Item>
                         <List.Item>
-                            The program can run on Windows, Linux, or Apple prodcts. 
+                            The program can run on Windows, Linux, or Apple prodcts. The program is run through 
+                            the command line.
                         </List.Item>
                     </List>
 
                     <p style={{"color":"white"}}>
-                        A user is able to search for any file on an OS. 
+                        A user is able to search for any file on any OS. 
                     </p>
                 </Grid.Column>
 
@@ -310,7 +327,7 @@ export default () => {
                         <Image size="small" centered src="../static/assets/weather.png"></Image>
                         <Card.Content>
                             <Card.Header>Weather App</Card.Header>
-                            <Card.Meta>Python & SQLite3</Card.Meta>
+                            <Card.Meta>Python, SQLite3, & public API</Card.Meta>
                             <Card.Description>Uses openweathermap api to get live weather information.</Card.Description>
                             <div style={{ marginTop: '10px' }}>
                                 <Link route="https://github.com/LEscobar-Driver/Code/blob/master/Python/weatherForcast.py">
@@ -324,10 +341,14 @@ export default () => {
                 <Grid.Column>
                     <List bulleted style={{"color":"white"}} as="h2">
                         <List.Item>
-                            Backend python code. Data is saved into SQLite3 db.
+                            Backend python code.
                         </List.Item>
                         <List.Item>
-                            DB is saved locally. 
+                            Demonstration on how to register for a public API and extract data from it. Saves data on a 
+                            local DB.
+                        </List.Item>
+                        <List.Item>
+                            Uses OpenWeatherMap API.
                         </List.Item>
                     </List>
 
@@ -338,7 +359,7 @@ export default () => {
                     </p>
                 </Grid.Column>
             </Grid.Row>
-            
+
        </Grid>
     );  
 };

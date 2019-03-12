@@ -12,8 +12,8 @@ export default () => {
                         <Image size="small" centered src="../static/assets/authenticating.png"></Image>
                         <Card.Content>
                             <Card.Header>Authenticating Test Suite</Card.Header>
-                            <Card.Meta>Python unittest, xmlrunner, & Docker</Card.Meta>
-                            <Card.Description>Unittest suite testing api endpoints. 22 tests total.</Card.Description>
+                            <Card.Meta>Python unittest, xmlrunner, requests, & Docker</Card.Meta>
+                            <Card.Description>Unittest suite testing api endpoints.</Card.Description>
                             <div style={{ marginTop: '10px' }}>
                                 <Link route="https://github.com/LEscobar-Driver/Authenticating/tree/master/src/qa">
                                     <a target="_blank">Source Code</a>
@@ -32,14 +32,14 @@ export default () => {
                             Dockerized python unittest scripts.
                         </List.Item>
                         <List.Item>
-                            A suite of 22 unittest, testing api endpoints from other devs.
+                            A suite of 22 unittests, testing api endpoints from other devs.
                         </List.Item>
                     </List>
 
                     <p style={{"color":"white"}}>
                         Some of my professional work. These automated python unittest are dockerized to fit 
                         into CI (continuous integration) lifecycle. The purpose of these endpoints tests are to 
-                        ensure that these inhouse facial recognition endpoints perform as expected. Includes 22 unittest 
+                        ensure that these inhouse picture recognition endpoints perform as expected. Includes 22 unittest 
                         which hit our developement end points. Data to run unittest has been excluded for 
                         security concerns. 
                     </p>
@@ -65,8 +65,8 @@ export default () => {
                         <Image size="medium" centered src="../static/assets/fliptix.png"></Image>
                         <Card.Content>
                             <Card.Header>FlipTix Test Suite</Card.Header>
-                            <Card.Meta>Python unittest, xmlrunner, & Docker</Card.Meta>
-                            <Card.Description>Unittest suite testing api endpoints. 10 tests total.</Card.Description>
+                            <Card.Meta>Python unittest, xmlrunner, requets, & Docker</Card.Meta>
+                            <Card.Description>Unittest suite testing api endpoints.</Card.Description>
                             <div style={{ marginTop: '10px' }}>
                                 <Link route="https://github.com/LEscobar-Driver/FlipTix/tree/master/src/qa">
                                     <a target="_blank">Source Code</a>
@@ -85,7 +85,7 @@ export default () => {
                             Dockerized python unittest.
                         </List.Item>
                         <List.Item>
-                            A suite of 10 unittest, testing api endpoints from other devs.
+                            A suite of 10 unittests, testing api endpoints from other devs.
                         </List.Item>
                     </List>
 

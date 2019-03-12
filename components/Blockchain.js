@@ -13,7 +13,7 @@ export default () => {
                         <Image src="../static/assets/dPen.png"></Image>
                         <Card.Content>
                             <Card.Header>Decentralized Kickstarter</Card.Header>
-                            <Card.Meta>Full stack dapp</Card.Meta>
+                            <Card.Meta>Full stack Decentralized Application</Card.Meta>
                             <Card.Description>A decentralized kickstarter live on the rinkey testnet.</Card.Description>
                             <div style={{ marginTop: '10px' }}>
                                 <Link route="https://github.com/LEscobar-Driver/dKick">
@@ -30,21 +30,21 @@ export default () => {
                             Full stack ethereum dapp.
                         </List.Item>
                         <List.Item>
-                            Ethereum Smart contract back end.
+                            Ethereum Solidity Smart contract back end.
                         </List.Item>
                         <List.Item>
                             React & Next js front end.
                         </List.Item>
                         <List.Item>
-                            Live on Rinkeby testnet.
+                            Live on Rinkeby testnet & https://decentalizedkickstarter.herokuapp.com
                         </List.Item>
                         <List.Item>
-                            Live at https://decentalizedkickstarter.herokuapp.com
+                            Metamask is required.
                         </List.Item>
                     </List>
 
                     <p style={{"color":"white"}}>
-                        I built & expanded this decentralized application. Users can create
+                        I built & expanded this dapp. Users can create
                         campaigns open to donations. Funds can only be withdrawn from campaigns
                         upon withdraw requests being voted on by the users who contributed funds.
                         A withdraw request must achieve 50% yes votes for funds to be withdrawn.
@@ -65,7 +65,7 @@ export default () => {
                         <Image  src="../static/assets/blockchainAPI.png"></Image>
                         <Card.Content>
                             <Card.Header>PoW Python Blockchain</Card.Header>
-                            <Card.Meta>Proof of Work Blockchain & API</Card.Meta>
+                            <Card.Meta>Proof of Work Blockchain & API suite</Card.Meta>
                             <Card.Description>A Python PoW blockchain with an API suite.</Card.Description>
                             <div style={{ marginTop: '10px' }}>
                                 <Link route="https://github.com/LEscobar-Driver/BlockchainProject">
@@ -133,10 +133,16 @@ export default () => {
                 <Grid.Column>
                     <List bulleted style={{"color":"white"}} as="h2">
                         <List.Item>
-                            Custom compile & deploy scripts.
+                            Custom javascript compile & deploy scripts.
                         </List.Item>
                         <List.Item>
-                            Test coverage included.
+                            Deploys to Rinkeby testnet. 
+                        </List.Item>
+                        <List.Item>
+                            Mocha test coverage included.
+                        </List.Item>
+                        <List.Item>
+                            Metamask required.
                         </List.Item>
                     </List>
 
@@ -163,7 +169,7 @@ export default () => {
                         <Card.Content>
                             <Card.Header>Crypto Zombies</Card.Header>
                             <Card.Meta>cryptozombies.io</Card.Meta>
-                            <Card.Description>An interactive code school that taught me now to program smart contracts</Card.Description>
+                            <Card.Description>An interactive code school that taught me now to program smart contracts.</Card.Description>
                             <div style={{ marginTop: '10px' }}>
                                 <Link route="https://github.com/LEscobar-Driver/CryptoZombieRemix">
                                     <a target="_blank">Source Code</a>
@@ -179,15 +185,15 @@ export default () => {
                             Finished beginner to intermediate smart contract course.
                         </List.Item>
                         <List.Item>
-                            Using 7 smart contracts. 5 custom contracts.
+                            Using Ownable, Safemath, & ERC721 contracts from Open Zepplin.
                         </List.Item>
                         <List.Item>
-                            Solidaty, Web3.js & HTML
+                            Solidaty, Web3.js & HTML.
                         </List.Item>
                     </List>
 
                     <p style={{"color":"white"}}>
-                        Completed Making the Zombie Factory, Zombies Attack Their Victims, Advanced
+                        Completed courses include; Making the Zombie Factory, Zombies Attack Their Victims, Advanced
                         Solidity Concepts, Zombie Battle System, ERC721 & Crypto-Collectibles, & 
                         App Front-ends & Web3.js
                     </p>
@@ -202,7 +208,7 @@ export default () => {
                         <Card.Content>
                             <Card.Header>CryptoCurrency Market API</Card.Header>
                             <Card.Meta>Bittrex Market Information</Card.Meta>
-                            <Card.Description>Python code allows a user to get up to the second live information</Card.Description>
+                            <Card.Description>Python code allows a user to get up to the second live information from Bittrex.</Card.Description>
                             <div style={{ marginTop: '10px' }}>
                                 <Link route="https://github.com/LEscobar-Driver/Code/tree/master/Python/CryptoCurrencyAPIData">
                                     <a target="_blank">Source Code</a>
@@ -220,12 +226,15 @@ export default () => {
                         <List.Item>
                             Plugs into Bittrex market information.
                         </List.Item>
+                        <List.Item>
+                            Prints all market information request to a text file. Can be reconfigured to a bot easily.
+                        </List.Item>
                     </List>
 
                     <p style={{"color":"white"}}>
                         I built this backend tool to allow a user to plug this into a trading bot. This allows
                         a user to extract live up to the second data from bittrex using Python. All information
-                        is output into a text file. Uses RESTful apis. Security token removed for security.
+                        is output into a text file. Uses RESTful apis. Security token removed for ... security.
                     </p>
                 </Grid.Column>
 

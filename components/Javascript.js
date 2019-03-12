@@ -19,8 +19,8 @@ export default () => {
                         <Image size="small" centered src="../static/assets/dragon.png"></Image>
                         <Card.Content>
                             <Card.Header>Dragon Stack</Card.Header>
-                            <Card.Meta>Full stack project</Card.Meta>
-                            <Card.Description>Users create accounts to collect dragons. Dragons can be traded, sold, & mated</Card.Description>
+                            <Card.Meta>Full stack JS project</Card.Meta>
+                            <Card.Description>Users create accounts to collect dragons. Dragons can be traded, sold, & breed</Card.Description>
                             <div style={{ marginTop: '10px' }}>
                                 <Link route="https://github.com/LEscobar-Driver/DragonStack">
                                     <a target="_blank">Source Code</a>
@@ -33,13 +33,13 @@ export default () => {
                 <Grid.Column>
                     <List bulleted style={{"color":"white"}} as="h2">
                         <List.Item>
-                            Full stack application.
+                            Full stack javascript application.
                         </List.Item>
                         <List.Item>
-                            Nodejs, PostgreSQL, SQL, React, Redux, nodemon, babel.
+                            Nodejs, PostgreSQL, React, Redux, nodemon, babel, Shell, HTML, JS, CSS.
                         </List.Item>
                         <List.Item>
-                            Shell, HTML, JS, CSS.
+                            Backend sql db with tables and shell scripts.
                         </List.Item>
                         <List.Item>
                             Includes Restful API for users.
