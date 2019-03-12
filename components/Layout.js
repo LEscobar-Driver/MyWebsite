@@ -28,7 +28,7 @@ export default (props) => {
                 </Head>
 
                 {/* <div style={{ marginTop: '50px' }}></div>  */}
-                <h3 style={{"color":"white"}}>I am in the layout</h3>
+                {/* <h3 style={{"color":"white"}}>I am in the layout</h3> */}
                 {props.children}
 
             </Container>
