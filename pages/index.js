@@ -16,7 +16,7 @@ class CampaignIndex extends Component {
         return(
         <Layout>
 
-            <div id="AboutMe" style={{"marginTop":"285px"}}></div>
+            <div id="AboutMe" style={{"marginTop":"315px"}}></div>
             <AboutMe/>
             
             <div id="Skills" style={{"marginTop":"150px"}}></div>
