@@ -59,7 +59,7 @@ class Header extends Component {
                                 <Dropdown.Item image="../static/assets/python.png" text='Python' />
                             </Link>
 
-                            <Link route="#C++-Section">
+                            <Link route="#Cplusplus">
                                 <Dropdown.Item image="../static/assets/cplusplus.png" text='C++' />
                             </Link>
 

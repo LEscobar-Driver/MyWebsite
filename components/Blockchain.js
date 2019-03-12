@@ -5,7 +5,7 @@ import { Link } from '../routes';
 
 export default () => {
     return(
-        <Grid>
+        <Grid divided="vertically">
 
             <Grid.Row columns={4}> 
                 <Grid.Column>
