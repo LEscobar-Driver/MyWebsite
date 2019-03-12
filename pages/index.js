@@ -3,6 +3,7 @@ import { Card, Button, Popup, Image, Dimmer, Header, Icon, Grid, List} from 'sem
 import Layout from '../components/Layout.js';
 import { Link, Router } from '../routes';
 import AboutMe from '../components/AboutMe.js';
+import Skills from '../components/Skills.js';
 
 
 class CampaignIndex extends Component {
@@ -18,8 +19,12 @@ class CampaignIndex extends Component {
             <div id="AboutMe"></div>
             <AboutMe/>
             
-            <div id="Skills"></div>
-            <Grid celled> 
+
+            <div id="Skills" style={{"marginTop":"150px"}}></div>
+            <Skills/>
+            
+
+            {/* <Grid celled> 
                 <Grid.Row>
                     <Grid.Column width={12}>
                         <span style={{"color":"white", "padding":"400px", "font-size":"27px", "font-weight":"bold"}}>Skills</span>
@@ -47,7 +52,7 @@ class CampaignIndex extends Component {
                         <Image style={{"marginTop":"12px"}} size="large" src="../static/assets/skills.png"/>
                     </Grid.Column>
                 </Grid.Row>
-            </Grid>
+            </Grid> */}
 
 
             <Grid divided="vertically" >

@@ -1,17 +1,14 @@
 import React, { Component } from 'react';
 import { Grid, Image, List } from 'semantic-ui-react';
-import { Link, Router } from '../routes';
+import { Link } from '../routes';
 
 
 class Aboutme extends Component {
-    state = {
-
-    };
-
 
     render() {
         return(
-<Grid celled> 
+            
+            <Grid celled> 
                 <Grid.Row>
                     <Grid.Column width={3}>
                         <Image src="../static/assets/aboutMe.jpg"/>
