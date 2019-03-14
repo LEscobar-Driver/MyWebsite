@@ -13,7 +13,7 @@ class Aboutme extends Component {
                         <span style={{"color":"green"}}>.</span></span>
                         <List style={{"color":"white"}} as="h2">
                             <List.Item>
-                                Software Efficiency Tools : <span style={{"color":"green"}}>Trello, Aha, JIRA.</span>
+                                Software Efficiency Tools : <span style={{"color":"green"}}>Trello, Aha, JIRA, Postman.</span>
                             </List.Item>
                             <List.Item>
                                 Professional QA Tools : <span style={{"color":"green"}}>Python Unittest, Selenium, Requests, Docker.</span>

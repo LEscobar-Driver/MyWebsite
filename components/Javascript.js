@@ -20,7 +20,7 @@ export default () => {
                         <Card.Content>
                             <Card.Header>Dragon Stack</Card.Header>
                             <Card.Meta>Full stack JS project</Card.Meta>
-                            <Card.Description>Users create accounts to collect dragons. Dragons can be traded, sold, & breed</Card.Description>
+                            <Card.Description>Users create accounts to collect dragons. Dragons can be traded, sold, & breed.</Card.Description>
                             <div style={{ marginTop: '10px' }}>
                                 <Link route="https://github.com/LEscobar-Driver/DragonStack">
                                     <a target="_blank">Source Code</a>

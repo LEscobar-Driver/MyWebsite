@@ -16,13 +16,13 @@ class CampaignIndex extends Component {
         return(
         <Layout>
 
-            <div id="AboutMe" style={{"marginTop":"315px"}}></div>
+            <div id="AboutMe" style={{"marginTop":"100px"}}></div>
             <AboutMe/>
             
-            <div id="Skills" style={{"marginTop":"150px"}}></div>
+            <div id="Skills" style={{"marginTop":"100px"}}></div>
             <Skills/>
             
-            <div style={{"marginTop":"200px", "marginBottom":"150px"}}>
+            <div style={{"marginTop":"150px", "marginBottom":"150px"}}>
                 <Divider horizontal inverted>
                     <span style={{"font-size":"27px"}}>
                         Portfolio<span style={{"color":"green" }}>.</span>

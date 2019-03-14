@@ -37,19 +37,20 @@ class Header extends Component {
 
                 <Menu.Menu position="right" >
 
-                    <Link route="#AboutMe">
-                        <a className="item">About Me</a>
+                    <Link route="https://github.com/LEscobar-Driver">
+                        <a target="_blank" className="item">Github</a>
                     </Link>
 
-                    <Link route="#Skills">
+                    {/* <Link route="#Skills">
                         <a className="item">Skills</a>
-                    </Link>
+                    </Link> */}
 
                     <Link route="#Contact">
                         <a className="item">Contact</a>
                     </Link>
 
-                    <Dropdown as="a" item simple text="My Portfolio" direction="left" selection="true">
+                    {/* <Dropdown as="a" item simple text="My Portfolio" direction="left" selection="true"> */}
+                    <Dropdown as="a" item simple text="My Portfolio" fluid >
                         <Dropdown.Menu style={{ marginRight: '0px' }}>
 
                             <Link route="#Python-Section">
@@ -61,7 +62,7 @@ class Header extends Component {
                             </Link>
 
                             <Link route="#Cplusplus">
-                                <Dropdown.Item image="../static/assets/cplusplus.png" text='C++' />
+                                <Dropdown.Item image="../static/assets/cplusplus.png" text=' C++' />
                             </Link>
 
                             <Link route="#Blockchain">
@@ -69,7 +70,7 @@ class Header extends Component {
                             </Link>
 
                             <Link route="#QA">
-                                <Dropdown.Item image="../static/assets/qaEngine.png" text='Professional QA' />
+                                <Dropdown.Item image="../static/assets/qaEngine.png" text='QA' />
                             </Link>
                         </Dropdown.Menu>
                     </Dropdown>

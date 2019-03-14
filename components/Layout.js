@@ -10,6 +10,8 @@ export default (props) => {
         <div id="topOfPage">            
             <Header/>    
 
+            {/* <a fixed="top" href="#topOfPage">Back to Top</a> */}
+
             <style>{`
                 html, body {
                     background-color: #252839 !important;

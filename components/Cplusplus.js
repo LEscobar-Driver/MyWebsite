@@ -85,7 +85,7 @@ export default () => {
                             C++ tree structure.
                         </List.Item>
                         <List.Item>
-                            Heuristic search is capable of an N depth search (N = user choice depth).
+                            Heuristic search is capable of any N depth search (N = user choice depth).
                         </List.Item>
                         <List.Item>
                             Algorithm employs a game tree heuristic search; the AI only generates the

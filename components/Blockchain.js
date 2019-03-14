@@ -85,7 +85,7 @@ export default () => {
                 <Grid.Column>
                     <List bulleted style={{"color":"white"}} as="h2">
                         <List.Item>
-                            A PoW blockchain built from scratch.
+                            A PoW blockchain.
                         </List.Item>
                         <List.Item>
                             Powered by Python.
@@ -234,7 +234,7 @@ export default () => {
                     <p style={{"color":"white"}}>
                         I built this backend tool to allow a user to plug this into a trading bot. This allows
                         a user to extract live up to the second data from bittrex using Python. All information
-                        is output into a text file. Uses RESTful apis. Security token removed for ... security.
+                        is output into a text file. Uses RESTful apis. Security token removed for security.
                     </p>
                 </Grid.Column>
 

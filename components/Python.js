@@ -262,7 +262,7 @@ export default () => {
 
                     <p style={{"color":"white"}}>
                         A user runs this program through their command line. A user runs this program like "python dict.py email".
-                        In this case the password for "email" would be returned to the users clipboard. User can make sure of this 
+                        In this case the password for "email" would be returned to the users clipboard. User can make use of this 
                         in secure computing environments (tails) where keys can get very big.
                     </p>
                 </Grid.Column>

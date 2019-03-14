@@ -144,13 +144,7 @@ class Footer extends Component {
                             <List horizontal inverted divided  size='small'>
                                 <List.Item>
                                     <Link href="https://github.com/LEscobar-Driver/MyWebsite">
-                                        <a target="_blank">Source Code</a>
-                                    </Link>
-                                </List.Item>
-
-                                <List.Item>
-                                    <Link route="/">
-                                        <a>Contact me</a>
+                                        <a target="_blank">Website Source Code</a>
                                     </Link>
                                 </List.Item>
                                 
@@ -231,95 +225,3 @@ class Footer extends Component {
     }
 }
 export default Footer;
-
-// export default () => {
-//     return(
-//        <Segment inverted vertical style={{ margin: '20em 0em 0em', padding: '5em 0em' }}>
-//             <Container textAlign="center">
-
-//                 <Grid divided inverted stackable>
-//                     <Grid.Column width={3}>
-//                         <Header inverted as='h4' content='Group 1' />
-//                         <List link inverted>
-//                         <List.Item as='a'>Link One</List.Item>
-//                         <List.Item as='a'>Link Two</List.Item>
-//                         <List.Item as='a'>Link Three</List.Item>
-//                         <List.Item as='a'>Link Four</List.Item>
-//                         </List>
-//                     </Grid.Column>
-
-//                     <Grid.Column width={3}>
-//                         <Header inverted as='h4' content='Group 2' />
-//                         <List link inverted>
-//                         <List.Item as='a'>Link One</List.Item>
-//                         <List.Item as='a'>Link Two</List.Item>
-//                         <List.Item as='a'>Link Three</List.Item>
-//                         <List.Item as='a'>Link Four</List.Item>
-//                         </List>
-//                     </Grid.Column>
-
-//                     {/* <Grid.Column width={3}>
-//                         <Header inverted as='h4' content='Group 3' />
-//                         <List link inverted>
-//                         <List.Item as='a'>Link One</List.Item>
-//                         <List.Item as='a'>Link Two</List.Item>
-//                         <List.Item as='a'>Link Three</List.Item>
-//                         <List.Item as='a'>Link Four</List.Item>
-//                         </List>
-//                     </Grid.Column> */}
-
-//                     <Grid.Column width={10}>
-//                         <Header inverted as='h2' content='Contact' />
-//                         <h4>Do you have question? Go ahead and send me message.</h4>
-
-//                         <Form success>
-//                             <Form.Group widths='equal'>
-//                                 <Form.Input label='Name' placeholder='Name' />
-//                                 <Form.Input label='Email' placeholder='Email' />
-//                                 <Form.Input label='Phone Number' placeholder='Number' />
-//                             </Form.Group>
-                            
-//                             <Form.TextArea label='Message' placeholder='Message' />
-
-//                             {/* <Form.Button>Submit</Form.Button> */}
-
-//                             <Message success header='Form Completed' content="You're all signed up for the newsletter" />
-//                             <Button>Submit</Button>
-
-//                         </Form>
-
-//                     </Grid.Column>
-//                 </Grid>
-
-//                 <Divider inverted section />
-
-//                 <Image avatar centered size='small' src='../static/assets/favicon.ico' alt=" "/>
-//                 <Image avatar centered size='small' src='../static/assets/qaEngine.png' alt=" "/>
-//                 <div style={{ marginTop: '10px' }}>
-//                     <List horizontal inverted divided  size='small'>
-//                         <List.Item>
-//                             <Link route="/">
-//                                 <a>Source Code</a>
-//                             </Link>
-//                         </List.Item>
-
-//                         <List.Item>
-//                             <Link route="/">
-//                                 <a>Contact Us</a>
-//                             </Link>
-//                         </List.Item>
-                        
-
-//                         <List.Item>
-//                             <Link route="#topOfPage">
-//                                 <a>Top of page</a>
-//                             </Link>
-//                         </List.Item>
-//                     </List>
-//                 </div>
-
-
-//             </Container>        
-//        </Segment>
-//     );  
-// };
