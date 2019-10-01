@@ -13,6 +13,8 @@ import { Grid,
     Button } from 'semantic-ui-react';
 import { Link } from '../routes';
 
+var emailjs_json = require('../config/emailjs.json')
+
 class Footer extends Component {
     state = {
         errorMessage: "",
@@ -31,6 +33,7 @@ class Footer extends Component {
         if (this.state.name.length > 2 && this.state.name !== '') {
             return false;
         }
+        console.log('I AM IN HANDLE NAME')
         let errMsg = this.state.errorMessage + "\nInvalid Name value.";
         this.setState({ errorMessage: errMsg});
         return true;
@@ -79,10 +82,10 @@ class Footer extends Component {
 
         if (this.state.errorMessage === "") {
             try {
-                await emailjs.init("user_SF89V0WjfaZHFMIGFFeif");
+                await emailjs.init(emailjs_json.init);
 
-                let service_id = "default_service";
-                let template_id = "template_FKK9klm2";
+                let service_id = emailjs_json.service_id;
+                let template_id = emailjs_json.template_id;
                 let templateParams = {
                     from_name: this.state.name,
                     reply_to: this.state.email,
@@ -90,7 +93,12 @@ class Footer extends Component {
                     to_name: "Luis Escobar-Driver"
                 };
 
+                // console.log(`BEFORE SEND`);
+
                 await emailjs.send(service_id, template_id, templateParams);
+
+                // console.log(`AFTER SEND`);
+
                 alert("Sent!");
 
                 await this.setState({ name: "",
