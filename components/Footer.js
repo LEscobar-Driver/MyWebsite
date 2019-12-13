@@ -13,7 +13,7 @@ import { Grid,
     Button } from 'semantic-ui-react';
 import { Link } from '../routes';
 
-var emailjs_json = require('../config/emailjs.json')
+// var emailjs_json = require('../config/emailjs.json')
 
 class Footer extends Component {
     state = {
