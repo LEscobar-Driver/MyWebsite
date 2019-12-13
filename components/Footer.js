@@ -82,10 +82,17 @@ class Footer extends Component {
 
         if (this.state.errorMessage === "") {
             try {
-                await emailjs.init(emailjs_json.init);
+                // await emailjs.init(emailjs_json.init);
 
-                let service_id = emailjs_json.service_id;
-                let template_id = emailjs_json.template_id;
+                // let service_id = emailjs_json.service_id;
+                // let template_id = emailjs_json.template_id;
+
+                // Heroku env variables.
+                await emailjs.init(process.env.INIT_USER);
+
+                let service_id = emailjs_json.SERVICE_ID;
+                let template_id = emailjs_json.TEMPLATE_ID;
+
                 let templateParams = {
                     from_name: this.state.name,
                     reply_to: this.state.email,
