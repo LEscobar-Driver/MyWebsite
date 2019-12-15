@@ -13,7 +13,7 @@ import { Grid,
     Button } from 'semantic-ui-react';
 import { Link } from '../routes';
 
-// var emailjs_json = require('../config/emailjs.json')
+var emailjs_json = require('../config/emailjs.json')
 
 class Footer extends Component {
     state = {
@@ -83,15 +83,16 @@ class Footer extends Component {
         if (this.state.errorMessage === "") {
             try {
                 // await emailjs.init(emailjs_json.init);
-
                 // let service_id = emailjs_json.service_id;
                 // let template_id = emailjs_json.template_id;
 
                 // Heroku env variables.
                 await emailjs.init(process.env.INIT_USER);
-
-                let service_id = emailjs_json.SERVICE_ID;
-                let template_id = emailjs_json.TEMPLATE_ID;
+                let service_id = process.env.SERVICE_ID;
+                let template_id = process.env.TEMPLATE_ID;
+                console.log(`process.env.INIT_USER ${process.env.INIT_USER}`);
+                console.log(`process.env.SERVICE_ID ${process.env.SERVICE_ID}`);
+                console.log(`process.env.TEMPLATE_ID ${process.env.TEMPLATE_ID}`);
 
                 let templateParams = {
                     from_name: this.state.name,
