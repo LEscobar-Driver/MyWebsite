@@ -92,6 +92,7 @@ class Footer extends Component {
                 let template_id = process.env.TEMPLATE_ID;
                 console.log(`NODE_APP_.REACT_APP_INIT_USER ${process.env.REACT_APP_INIT_USER}`);
                 console.log(`NODE_APP_.INIT_USER ${process.env.INIT_USER}`);
+                console.log(`NODE_APP_.INIT_USER ${process.env["INIT_USER"]}`);    
 
                 let templateParams = {
                     from_name: this.state.name,
