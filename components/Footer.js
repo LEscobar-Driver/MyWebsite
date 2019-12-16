@@ -94,10 +94,6 @@ class Footer extends Component {
                 console.log(`test 2 - ${process.env.INIT_USER}`);
                 console.log(`test 3 - ${process.env["INIT_USER"]}`);
 
-                // set an environment variable at runtime
-                process.env['RANDOM_ID'] = 'super random';
-                console.log(`test 2 - ${process.env.RANDOM_ID}`);
-
                 let templateParams = {
                     from_name: this.state.name,
                     reply_to: this.state.email,
