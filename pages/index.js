@@ -10,6 +10,10 @@ import CPlusPlus from '../components/Cplusplus.js';
 import Javascript from '../components/Javascript.js';
 import Python from '../components/Python.js';
 
+import getConfig from 'next/config'
+// Only holds serverRuntimeConfig and publicRuntimeConfig from next.config.js nothing else.
+const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
+
 class CampaignIndex extends Component {
 
     render() {
