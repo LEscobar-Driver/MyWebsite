@@ -13,6 +13,11 @@ import { Grid,
     Button } from 'semantic-ui-react';
 import { Link } from '../routes';
 
+// pages/index.js
+import getConfig from 'next/config'
+// Only holds serverRuntimeConfig and publicRuntimeConfig from next.config.js nothing else.
+const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
+
 // var emailjs_json = require('../config/emailjs.json')
 
 class Footer extends Component {
@@ -90,10 +95,16 @@ class Footer extends Component {
                 await emailjs.init(process.env.INIT_USER);
                 let service_id = process.env.SERVICE_ID;
                 let template_id = process.env.TEMPLATE_ID;
-                console.log(`test 1 - ${process.env.NODE_ENV.REACT_APP_INIT_USER}`);
-                console.log(`test 2 - ${process.env.NODE_ENV.INIT_USER}`);
-                console.log(`test 3 - ${process.env["INIT_USER"]}`);
-                console.log(JSON.stringify(process.env))
+
+                // serverRuntimeConfig, publicRuntimeConfig
+                console.log(`test 1 - ${publicRuntimeConfig.INIT_USE_CLIENT}`);
+                console.log(`test 2 - ${serverRuntimeConfig.INIT_USER_SERVER}`);
+
+                // console.log(`test 1 - ${process.env.NODE_ENV.REACT_APP_INIT_USER}`);
+                // console.log(`test 2 - ${process.env.NODE_ENV.INIT_USER}`);
+                // console.log(`test 3 - ${process.env["INIT_USER"]}`);
+                console.log(JSON.stringify(publicRuntimeConfig))
+                console.log(JSON.stringify(serverRuntimeConfig))
                 console.log(JSON.stringify(process.env.NODE_ENV))
 
                 let templateParams = {
