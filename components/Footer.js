@@ -17,7 +17,7 @@ import { Link } from '../routes';
 // import getConfig from 'next/config'
 // // Only holds serverRuntimeConfig and publicRuntimeConfig from next.config.js nothing else.
 // const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
-var emailjs_json = require('./next.config.js');
+var emailjs_json = require('.././next.config.js');
 
 // var emailjs_json = require('../config/emailjs.json')
 
