@@ -9,7 +9,7 @@ module.exports = {
         mySecret: 'serverRuntimeConfig',
         secondSecret: process.env.NODE_ENV, // Pass through env variables
         INIT_USER_SERVER: process.env.INIT_USER,
-        REACT_APP_INIT_USER: process.env.REACT_APP_INIT_USER,
+        REACT_APP_INIT_USER_2: process.env.REACT_APP_INIT_USER,
       },
       
       publicRuntimeConfig: {
