@@ -93,7 +93,7 @@ class Footer extends Component {
                 console.log(`test 1 - ${process.env.REACT_APP_INIT_USER}`);
                 console.log(`test 2 - ${process.env.INIT_USER}`);
                 console.log(`test 3 - ${process.env["INIT_USER"]}`);
-                console.log(`test 3 - ${process.env}`);
+                console.log(JSON.stringify(process.env))
 
                 let templateParams = {
                     from_name: this.state.name,
