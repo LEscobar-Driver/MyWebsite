@@ -90,10 +90,11 @@ class Footer extends Component {
                 await emailjs.init(process.env.INIT_USER);
                 let service_id = process.env.SERVICE_ID;
                 let template_id = process.env.TEMPLATE_ID;
-                console.log(`test 1 - ${process.env.REACT_APP_INIT_USER}`);
-                console.log(`test 2 - ${process.env.INIT_USER}`);
+                console.log(`test 1 - ${process.env.NODE_ENV.REACT_APP_INIT_USER}`);
+                console.log(`test 2 - ${process.env.NODE_ENV.INIT_USER}`);
                 console.log(`test 3 - ${process.env["INIT_USER"]}`);
                 console.log(JSON.stringify(process.env))
+                console.log(JSON.stringify(process.env.NODE_ENV))
 
                 let templateParams = {
                     from_name: this.state.name,
