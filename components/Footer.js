@@ -14,9 +14,10 @@ import { Grid,
 import { Link } from '../routes';
 
 // pages/index.js
-import getConfig from 'next/config'
-// Only holds serverRuntimeConfig and publicRuntimeConfig from next.config.js nothing else.
-const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
+// import getConfig from 'next/config'
+// // Only holds serverRuntimeConfig and publicRuntimeConfig from next.config.js nothing else.
+// const { serverRuntimeConfig, publicRuntimeConfig } = getConfig()
+var emailjs_json = require('./next.config.js');
 
 // var emailjs_json = require('../config/emailjs.json')
 
@@ -97,8 +98,8 @@ class Footer extends Component {
                 let template_id = process.env.TEMPLATE_ID;
 
                 // serverRuntimeConfig, publicRuntimeConfig
-                console.log(`test 1 - ${publicRuntimeConfig.INIT_USE_CLIENT}`);
-                console.log(`test 2 - ${serverRuntimeConfig.INIT_USER_SERVER}`);
+                console.log(`test 1 - ${emailjs_json.serverRuntimeConfig.INIT_USE_CLIENT}`);
+                console.log(`test 2 - ${emailjs_json.publicRuntimeConfig.INIT_USER_SERVER}`);
 
                 // console.log(`test 1 - ${process.env.NODE_ENV.REACT_APP_INIT_USER}`);
                 // console.log(`test 2 - ${process.env.NODE_ENV.INIT_USER}`);
