@@ -98,15 +98,11 @@ class Footer extends Component {
                 let template_id = process.env.TEMPLATE_ID;
 
                 // serverRuntimeConfig, publicRuntimeConfig
-                console.log(`test 1 - ${emailjs_json.publicRuntimeConfig.INIT_USER_CLIENT}`);
-                console.log(`test 2 - ${emailjs_json.serverRuntimeConfig.INIT_USER_SERVER}`);
+                // console.log(`test 1 - ${emailjs_json.serverRuntimeConfig.REACT_APP_INIT_USER}`);
+                // console.log(`test 2 - ${emailjs_json.serverRuntimeConfig.INIT_USER_SERVER}`);
 
-                // console.log(`test 1 - ${process.env.NODE_ENV.REACT_APP_INIT_USER}`);
-                // console.log(`test 2 - ${process.env.NODE_ENV.INIT_USER}`);
-                // console.log(`test 3 - ${process.env["INIT_USER"]}`);
                 console.log(JSON.stringify(emailjs_json.publicRuntimeConfig))
                 console.log(JSON.stringify(emailjs_json.serverRuntimeConfig))
-                console.log(JSON.stringify(process.env.NODE_ENV))
 
                 let templateParams = {
                     from_name: this.state.name,
