@@ -13,7 +13,7 @@ import { Grid,
     Button } from 'semantic-ui-react';
 import { Link } from '../routes';
 
-// var emailjs_json = require('../config/emailjs.json')
+var emailjs_json = require('../config/emailjs.json')
 
 class Footer extends Component {
     state = {
@@ -82,18 +82,18 @@ class Footer extends Component {
 
         if (this.state.errorMessage === "") {
             try {
-                // await emailjs.init(emailjs_json.init);
-                // let service_id = emailjs_json.service_id;
-                // let template_id = emailjs_json.template_id;
+                await emailjs.init(emailjs_json.init);
+                let service_id = emailjs_json.service_id;
+                let template_id = emailjs_json.template_id;
 
-                // Heroku env variables.
-                await emailjs.init(process.env.INIT_USER);
-                let service_id = process.env.SERVICE_ID;
-                let template_id = process.env.TEMPLATE_ID;
-                console.log(`process.env ${process.env}`);
-                console.log(`NODE_APP_.INIT_USER ${NODE_APP_.INIT_USER}`);
-                console.log(`process.env.SERVICE_ID ${REACT_APP_.SERVICE_ID}`);
-                console.log(`process.env.TEMPLATE_ID ${REACT_APP_.TEMPLATE_ID}`);
+                // // Heroku env variables.
+                // await emailjs.init(process.env.INIT_USER);
+                // let service_id = process.env.SERVICE_ID;
+                // let template_id = process.env.TEMPLATE_ID;
+                // console.log(`process.env ${process.env}`);
+                console.log(`service_id ${service_id}`);
+                console.log(`template_id ${template_id}`);
+                console.log(`emailjs_json.init ${emailjs_json.init}`);
 
                 let templateParams = {
                     from_name: this.state.name,
