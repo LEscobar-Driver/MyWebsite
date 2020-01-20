@@ -37,19 +37,23 @@ class Header extends Component {
 
                 <Menu.Menu position="right" >
 
-                    <Link route="https://github.com/LEscobar-Driver">
-                        <a target="_blank" className="item">Github</a>
-                    </Link>
+                    <Menu.Item link>
+                        <a href='//github.com/LEscobar-Driver' target="_blank">Github</a>
+                    </Menu.Item>
+
+                    {/* <Menu.Item link href='//github.com/LEscobar-Driver' target='_blank'>
+                        Github
+                    </Menu.Item> */}
+
 
                     {/* <Link route="#Skills">
                         <a className="item">Skills</a>
                     </Link> */}
 
-                    <Link route="#Contact">
+                    {/* <Link route="#Contact">
                         <a className="item">Contact</a>
-                    </Link>
+                    </Link> */}
 
-                    {/* <Dropdown as="a" item simple text="My Portfolio" direction="left" selection="true"> */}
                     <Dropdown as="a" item simple text="My Portfolio" fluid >
                         <Dropdown.Menu style={{ marginRight: '0px' }}>
 
