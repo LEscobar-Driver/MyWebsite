@@ -50,9 +50,9 @@ class Header extends Component {
                         <a className="item">Skills</a>
                     </Link> */}
 
-                    {/* <Link route="#Contact">
+                    <Link route="#Contact">
                         <a className="item">Contact</a>
-                    </Link> */}
+                    </Link>
 
                     <Dropdown as="a" item simple text="My Portfolio" fluid >
                         <Dropdown.Menu style={{ marginRight: '0px' }}>
