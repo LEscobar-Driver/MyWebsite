@@ -24,7 +24,7 @@ class Aboutme extends Component {
                             </List.Item>
                             <List.Item></List.Item>                            
                             <List.Item>
-                                Software Tools : <span style={{"color":"red"}}>CircleCi{c} Jenkins{c} Trello{c} Aha{c} Jira{c} Postman{c} Git{c} GitKraken{c} SourceTree{c} cli{p}</span>
+                                Software Tools : <span style={{"color":"red"}}>CircleCi{c} Jenkins{c} Trello{c} Aha{c} Jira{c} Postman{c} Git{c} GitKraken{c} SourceTree{c} DataGrip{c} cli{p}</span>
                             </List.Item>
                             <List.Item></List.Item>
                             <List.Item>

@@ -25,7 +25,6 @@ class Index extends Component {
             <div style={{"marginTop":"150px", "marginBottom":"150px"}}>
                 <Divider horizontal inverted>
                     <span style={{"font-size":"27px"}}>
-                    {/* <span style={{"fontSize":"27px"}}> */}
                         Portfolio<span style={{"color":"red" }}>.</span>
                     </span>
                 </Divider>

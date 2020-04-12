@@ -28,12 +28,16 @@ class Header extends Component {
                 <Menu.Item header>
                     <div>
                         <Image alt=" " avatar size="mini" src='../static/assets/favicon.ico' style={{ marginRight: '10px' }}></Image>
-                        <b>Blockchain Engineer -- Software QA Engineer</b>
-                        <Image alt=" " avatar size="mini" src='../static/assets/qaEngine.png' style={{ marginLeft: '10px' }}></Image>
+                        <b>Blockchain Developer / Software Engineer</b>
+                        <Image alt=" " inline size="mini" src='../static/assets/software_engineer.png' style={{ marginLeft: '10px' }}></Image>
                     </div>
                 </Menu.Item>
 
                 <Menu.Menu position="right" >
+
+                    <Link route="/pdf">
+                        <a className="item" target="_blank">Resume</a>
+                    </Link>
 
                     <Menu.Item link>
                         <a href='//github.com/LEscobar-Driver' target="_blank">Github</a>
@@ -78,7 +82,6 @@ class Header extends Component {
                     </Dropdown>
 
                 </Menu.Menu>
-
             </Menu>
         );
     }
@@ -100,17 +103,13 @@ export default Header;
 //                     </a>
 //                 </Link>
 //             </Menu.Item>
-
 //             <Menu.Menu position="right">
-
 //                 <Link route="/">
 //                     <a className="item">Home</a>
 //                 </Link>
-
 //                 <Link route="/campaigns/new">
 //                     <a className="item">+</a>
 //                 </Link>
-
 //             </Menu.Menu>
 //         </Menu>
 //     );  

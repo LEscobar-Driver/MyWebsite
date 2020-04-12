@@ -36,16 +36,16 @@ class Aboutme extends Component {
                     <Grid.Column width={4}>
                         <List style={{"color":"white", marginTop: '50px'}} as="h2">
                             <List.Item>
-                                Current Location : <span style={{"color":"green"}}>California</span>
+                                Current Location : <span style={{"color":"green"}}>California, USA</span>
                             </List.Item>
                             <List.Item>
-                                Phone : <span style={{"color":"green"}}>714-222-8402</span>
+                                Phone : <span style={{"color":"green"}}>+1-714-222-8402</span>
                             </List.Item>
                             <List.Item>
                                 Email : <span style={{"color":"green"}}>lfescoba@uci.edu</span>
                             </List.Item>
                             <List.Item>
-                                Git : 
+                                Github : 
                                 <Link route="https://github.com/LEscobar-Driver">
                                     <a target="_blank" style={{"color":"green"}}> github.com/LEscobar-Driver</a>
                                 </Link>
