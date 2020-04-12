@@ -4,10 +4,8 @@ import { Link } from '../routes';
 
 
 class Aboutme extends Component {
-
     render() {
         return(
-            
             <Grid celled> 
                 <Grid.Row>
                     <Grid.Column width={3}>
@@ -27,14 +25,16 @@ class Aboutme extends Component {
                         </p>
                         <p>
                             <span style={{"color":"white", "font-size":"17px"}}>I am a freelance 
-                            <span style={{"color":"red"}}> Blockchain Developer</span> and a professional 
-                            <span style={{"color":"red"}}> Software QA Engineer</span>.
+                            <span style={{"color":"red"}}> Blockchain Developer </span> and a professional 
+                            <span style={{"color":"red"}}> Software Engineer </span>
+                            <span style={{"color":"white"}}> / </span>
+                            <span style={{"color":"red"}}> SDET</span>
                             </span>
                         </p>
                     </Grid.Column>
 
                     <Grid.Column width={4}>
-                        <List style={{"color":"white", marginTop: '35px'}} as="h2">
+                        <List style={{"color":"white", marginTop: '50px'}} as="h2">
                             <List.Item>
                                 Current Location : <span style={{"color":"green"}}>California</span>
                             </List.Item>
@@ -42,7 +42,7 @@ class Aboutme extends Component {
                                 Phone : <span style={{"color":"green"}}>714-222-8402</span>
                             </List.Item>
                             <List.Item>
-                                Email : <span style={{"color":"green"}}>blockchain.engineer.qa@gmail.com</span>
+                                Email : <span style={{"color":"green"}}>lfescoba@uci.edu</span>
                             </List.Item>
                             <List.Item>
                                 Git : 

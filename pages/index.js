@@ -10,7 +10,7 @@ import CPlusPlus from '../components/Cplusplus.js';
 import Javascript from '../components/Javascript.js';
 import Python from '../components/Python.js';
 
-class CampaignIndex extends Component {
+class Index extends Component {
 
     render() {
         return(
@@ -56,4 +56,4 @@ class CampaignIndex extends Component {
         );
     }
 }
-export default CampaignIndex;
+export default Index;
