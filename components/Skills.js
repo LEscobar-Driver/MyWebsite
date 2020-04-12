@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
 import { Grid, Image, List } from 'semantic-ui-react';
-import Link from 'next/link';
 
-// Coma functionality
+// Coma & period color functionality
 const c = ( <span style={{"color":"white"}}>,</span> );
 const p = ( <span style={{"color":"white"}}>.</span> );
 
 class Aboutme extends Component {
     render() {
         return(
-            <Grid celled> 
+            <Grid celled>
                 <Grid.Row>
                     <Grid.Column width={12}>
                         <span style={{"color":"white", "padding":"250px", "font-size":"27px", "font-weight":"bold"}}>Set of Skills & Experience
@@ -35,17 +34,11 @@ class Aboutme extends Component {
                                 Blockchain Tools : <span style={{"color":"red"}}>Open Zepplin{c} Ganache{c} Truffle{c} Remix{c} Metamask{c} Infura{p}</span>
                             </List.Item>
                             <List.Item></List.Item>
-                            <List.Item>
-                                Resume PDF : 
-                                <Link href="/pdf">
-                                    <a target="_blank" style={{"color":"red"}}>PDF Resume</a>
-                                </Link>
-                            </List.Item>
                         </List>
                     </Grid.Column>
 
                     <Grid.Column width={4}>
-                        <Image style={{"marginTop":"12px"}} size="large" src="../static/assets/skills.png"/>
+                        <Image style={{"marginTop":"19px"}} size="large" src="../static/assets/skills.png"/>
                     </Grid.Column>
                 </Grid.Row>
             </Grid>

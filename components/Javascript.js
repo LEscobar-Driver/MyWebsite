@@ -11,7 +11,7 @@ export default () => {
                 <Grid.Column>
                 </Grid.Column>
 
-                <Grid.Column>                    
+                <Grid.Column>
                 </Grid.Column>
 
                 <Grid.Column>

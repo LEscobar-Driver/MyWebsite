@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import { Document, Page} from 'react-pdf';
-import { Button, Icon, Container, Segment, Grid} from 'semantic-ui-react';
+import { Button, Icon, Container, Grid} from 'semantic-ui-react';
 
 
 export default class PdfResume extends Component {
