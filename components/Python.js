@@ -11,7 +11,7 @@ export default () => {
                 <Grid.Column>
                 </Grid.Column>
 
-                <Grid.Column>                    
+                <Grid.Column>
                 </Grid.Column>
 
                 <Grid.Column>
@@ -94,7 +94,7 @@ export default () => {
                 <Grid.Column>
                 </Grid.Column>
 
-                <Grid.Column>                    
+                <Grid.Column>
                 </Grid.Column>
             </Grid.Row>
 
@@ -103,7 +103,7 @@ export default () => {
                 <Grid.Column>
                 </Grid.Column>
 
-                <Grid.Column>                    
+                <Grid.Column>
                 </Grid.Column>
 
                 <Grid.Column>
@@ -183,7 +183,7 @@ export default () => {
                 <Grid.Column>
                 </Grid.Column>
 
-                <Grid.Column>                    
+                <Grid.Column>
                 </Grid.Column>
             </Grid.Row>
 
@@ -192,7 +192,7 @@ export default () => {
                 <Grid.Column>
                 </Grid.Column>
 
-                <Grid.Column>                    
+                <Grid.Column>
                 </Grid.Column>
 
                 <Grid.Column>

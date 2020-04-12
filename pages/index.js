@@ -26,16 +26,10 @@ class Index extends Component {
                 <Divider horizontal inverted>
                     <span style={{"font-size":"27px"}}>
                     {/* <span style={{"fontSize":"27px"}}> */}
-                        Portfolio<span style={{"color":"green" }}>.</span>
+                        Portfolio<span style={{"color":"red" }}>.</span>
                     </span>
                 </Divider>
             </div>
-
-            {/* <div style={{"marginTop":"150px", "marginBottom":"150px"}}>
-                <span style={{"color":"white", "font-size":"27px", "font-weight":"bold", "padding":"450px"}}>
-                    Portfolio<span style={{"color":"green" }}>.</span>
-                </span>
-            </div> */}
 
             <div id="Python-Section"></div>
             <Python/>
