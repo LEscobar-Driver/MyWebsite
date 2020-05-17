@@ -16,7 +16,7 @@ class Index extends Component {
 
     render() {
         return(
-            
+
         <Layout>
             <div id="AboutMe" style={{"marginTop":"100px"}}></div>
             <AboutMe/>

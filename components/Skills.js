@@ -32,8 +32,8 @@ class Aboutme extends Component {
 
                             <List.Item>
                             <span style={{"color":"red", "font-size":"20px", "font-weight":"normal"}}>Proficiencies</span> <span style={{"color":"white", "font-size":"20px", "font-weight":"normal"}}>
-                                : Selenium{c} Headless_Chromium{c} Firebase{c} Pusher{c} Docker{c} Flask{c} SQLAlchemy{c} Cron{c} Unittest{c} Pytest{c} CircleCi{c}
-                                oh-my-zsh{c} Trello{c} Aha{c} Jira{c} Postman{c} Git{c} GitKraken{c} SourceTree{c} MySQLWorkbench{c} DataGrip{c} cli{c} Mocha{c} VSCode{c}
+                                : Selenium{c} Headless_Chromium{c} Firebase{c} Pusher{c} Docker{c} Flask{c} SQLAlchemy{c} Gmail Api{c} Cron{c} Unittest{c} Pytest{c} CircleCi{c}
+                                Oh-My-Zsh{c} Trello{c} Aha{c} Jira{c} Postman{c} Git{c} GitKraken{c} SourceTree{c} MySQLWorkbench{c} DataGrip{c} Command line mastery {c} Mocha{c} VSCode{c}
                                 DataGrip{p}
                             </span>
                             </List.Item>

@@ -56,7 +56,7 @@ export default class Layout extends Component {
                     </Rail>
 
 
-                    <Container >
+                    <Container>
                         <Head>
                             <link rel="shortcut icon" type="image/x-icon" href="../static/assets/favicon.ico" />
                             <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css"/>
