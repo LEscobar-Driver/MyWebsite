@@ -1,15 +1,14 @@
 import React, { Component } from 'react';
-import { Grid, 
-    Image, 
+import {
+    Grid,
+    Image,
     Input,
-    Segment, 
-    List, 
-    Container, 
-    Header, 
-    Divider, 
-    Form, 
-    Icon,
-    Message, 
+    Segment,
+    List,
+    Container,
+    Header,
+    Form,
+    Message,
     Button } from 'semantic-ui-react';
 import { Link } from '../routes';
 

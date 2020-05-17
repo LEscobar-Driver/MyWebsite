@@ -38,7 +38,7 @@ export default class Layout extends Component {
 
                     <style>{`
                         html, body {
-                            background-color: #252839 !important;
+                            background-color: #051d2e !important;
                         }
                     `}</style>
 

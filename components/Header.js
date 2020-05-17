@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Menu, Image, Dropdown } from 'semantic-ui-react';
-import { Link, Router } from '../routes';
+import { Link } from '../routes';
 
 
 class Header extends Component {
@@ -29,7 +29,7 @@ class Header extends Component {
                     <div>
                         <Image alt=" " avatar size="mini" src='../static/assets/favicon.ico' style={{ marginRight: '10px' }}></Image>
                         <b>Blockchain Developer / Software Engineer</b>
-                        <Image alt=" " inline size="mini" src='../static/assets/software_engineer.png' style={{ marginLeft: '10px' }}></Image>
+                        <Image alt=" " circular inline size="mini" src='../static/assets/SE.jpg' style={{ marginLeft: '10px' }}></Image>
                     </div>
                 </Menu.Item>
 
@@ -58,6 +58,10 @@ class Header extends Component {
 
                     <Dropdown as="a" item simple text="My Portfolio" fluid >
                         <Dropdown.Menu style={{ marginRight: '0px' }}>
+
+                            <Link route="/#Serverless">
+                                <Dropdown.Item image="../static/assets/serverless.png" text='Serverless' />
+                            </Link>
 
                             <Link route="/#Python-Section">
                                 <Dropdown.Item image="../static/assets/python.png" text='Python' />

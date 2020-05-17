@@ -21,10 +21,10 @@ class Aboutme extends Component {
                             <span style={{"color":"red"}}>'</span>
                             m Luis
                             <span style={{"color":"red"}}>.</span>
-                            <br></br>                         
+                            <br></br>
                         </p>
                         <p>
-                            <span style={{"color":"white", "font-size":"17px"}}>I am a freelance 
+                            <span style={{"color":"white", "font-size":"20px"}}>I am a freelance 
                             <span style={{"color":"red"}}> Blockchain Developer </span> and a professional 
                             <span style={{"color":"red"}}> Software Engineer </span>
                             <span style={{"color":"white"}}> / </span>

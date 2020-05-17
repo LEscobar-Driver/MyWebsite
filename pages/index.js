@@ -9,6 +9,8 @@ import BlockChain from '../components/Blockchain.js';
 import CPlusPlus from '../components/Cplusplus.js';
 import Javascript from '../components/Javascript.js';
 import Python from '../components/Python.js';
+import Serverless from '../components/Serverless.js';
+
 
 class Index extends Component {
 
@@ -29,6 +31,9 @@ class Index extends Component {
                     </span>
                 </Divider>
             </div>
+
+            <div id="Serverless"></div>
+            <Serverless/>
 
             <div id="Python-Section"></div>
             <Python/>
