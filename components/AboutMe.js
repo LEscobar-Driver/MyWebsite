@@ -42,7 +42,7 @@ class Aboutme extends Component {
                                 Phone : <span style={{"color":"green"}}>+1-714-222-8402</span>
                             </List.Item>
                             <List.Item>
-                                Email : <span style={{"color":"green"}}>lfescoba@uci.edu</span>
+                                Email : <span style={{"color":"green"}}>l.driver.escobar@gmail.com</span>
                             </List.Item>
                             <List.Item>
                                 Github : 

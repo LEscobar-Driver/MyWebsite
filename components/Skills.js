@@ -12,7 +12,7 @@ class Aboutme extends Component {
                 <Grid.Row>
                     <Grid.Column width={12}>
 
-                        <span style={{"color":"white", "padding":"250px", "font-size":"27px", "font-weight":"bold"}}>Set of Skills & Experience
+                        <span style={{"color":"white", "padding":"300px", "font-size":"27px", "font-weight":"bold"}}>Some of my Skills
                         <span style={{"color":"red"}}>.</span></span>
 
                         <List style={{"color":"white"}} as="h2">
@@ -32,9 +32,7 @@ class Aboutme extends Component {
 
                             <List.Item>
                             <span style={{"color":"red", "font-size":"20px", "font-weight":"normal"}}>Proficiencies</span> <span style={{"color":"white", "font-size":"20px", "font-weight":"normal"}}>
-                                : Selenium{c} Headless_Chromium{c} Firebase{c} Pusher{c} Docker{c} Flask{c} SQLAlchemy{c} Gmail Api{c} Cron{c} Unittest{c} Pytest{c} CircleCi{c}
-                                Oh-My-Zsh{c} Trello{c} Aha{c} Jira{c} Postman{c} Git{c} GitKraken{c} SourceTree{c} MySQLWorkbench{c} DataGrip{c} Command line mastery {c} Mocha{c} VSCode{c}
-                                DataGrip{p}
+                                : Selenium{c} Headless Chromium{c} Firebase{c} Pusher{c} Docker{c} Flask{c} SQLAlchemy{c} Gmail Api{c} Cron{c} Unittest{c} Pytest{c} CircleCi{c} Oh-My-Zsh{c} Trello{c} Aha{c} Jira{c} Postman{c} Git{c} GitKraken{c} SourceTree{c} MySQLWorkbench{c} DataGrip{c} Command line mastery {c} Mocha{c} VSCode{c} DataGrip{p}
                             </span>
                             </List.Item>
 
@@ -57,7 +55,7 @@ class Aboutme extends Component {
                     </Grid.Column>
 
                     <Grid.Column width={4}>
-                        <Image style={{"marginTop":"65px"}} size="large" src="../static/assets/skills.png"/>
+                        <Image style={{"marginTop":"59px"}} size="large" src="../static/assets/skills.png"/>
                     </Grid.Column>
                     
                 </Grid.Row>
