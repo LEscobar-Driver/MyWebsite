@@ -82,14 +82,14 @@ export default () => {
                     </List>
 
                     <p style={{"color":"white"}}>
-                        Some of my professional work. These automated python unittest are dockerized to fit 
+                        Automated python unittest are dockerized to fit 
                         into CI (continuous integration) lifecycle. The purpose of these endpoints tests are to 
                         ensure that these inhouse picture recognition endpoints perform as expected. Includes 22 unittest 
                         which hit our developement end points. Data to run unittest has been excluded for 
                         security concerns.
                     </p>
                 </Grid.Column>
-                
+
                 <Grid.Column>
                 </Grid.Column>
 
@@ -135,7 +135,7 @@ export default () => {
                     </List>
 
                     <p style={{"color":"white"}}>
-                        Some of my professional work. These automated python unittest are dockerized to fit 
+                        Automated python unittest are dockerized to fit 
                         into CI (continuous integration) lifecycle. These unittest were developed by me to 
                         test our inhouse fliptix application which we engineered for a client. The app allows 
                         users to purchase tickets and resell them. 

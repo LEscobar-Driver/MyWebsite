@@ -56,11 +56,10 @@ export default () => {
                 <Grid.Column>
                 </Grid.Column>
 
-                <Grid.Column>                    
+                <Grid.Column>
                 </Grid.Column>
             </Grid.Row>
 
-            
             <Grid.Row columns={4}>
                 <Grid.Column>
                 </Grid.Column>

@@ -6,6 +6,48 @@ import { Link } from '../routes';
 export default () => {
     return(
        <Grid divided="vertically">
+
+            <Grid.Row columns={4}>
+                <Grid.Column>
+                </Grid.Column>
+
+                <Grid.Column>
+                </Grid.Column>
+                <Grid.Column>
+                    <Card fluid>
+                        <Image size="small" centered src="../static/assets/slscron.png"></Image>
+                        <Card.Content>
+                            <Card.Header>Serverless Cron Job</Card.Header>
+                            <Card.Meta>AWS Lambda & Scheduled Tasks</Card.Meta>
+                            <Card.Description>Allows users to schedule lambda cron tasks per any time needed</Card.Description>
+                            <div style={{ marginTop: '10px' }}>
+                                <Link route="https://github.com/LEscobar-Driver/crontab-ec2">
+                                    <a target="_blank">Source Code</a>
+                                </Link>
+                            </div>
+                        </Card.Content>
+                    </Card>
+                </Grid.Column>
+
+                <Grid.Column>
+                    <List bulleted style={{"color":"white"}} as="h2">
+                        <List.Item>
+                            Serverless Framework.
+                        </List.Item>
+                        <List.Item>
+                            AWS Powered.
+                        </List.Item>
+                        <List.Item>
+                            Schedule any task with any time.
+                        </List.Item>
+                    </List>
+
+                    <p style={{"color":"white"}}>
+                        Cron jobs no longer require a server 24/7/365. Aws Lambda & Serverless framework make it easy to set up reoccuring tasks, only pay when the timer is up.
+                    </p>
+                </Grid.Column>
+            </Grid.Row>
+
             <Grid.Row columns={4}>
                 <Grid.Column>
                     <Card fluid>
@@ -46,7 +88,9 @@ export default () => {
 
                 <Grid.Column>
                 </Grid.Column>
+            </Grid.Row>
 
+            <Grid.Row columns={4}>
                 <Grid.Column>
                 </Grid.Column>
 
@@ -86,7 +130,9 @@ export default () => {
                         Two seperate lambdas with a suite of layers attached. One lambda is triggered by an SNS event and the other lambda is triggered by an api gateway event. Lambdas have full S3 permissions.
                     </p>
                 </Grid.Column>
+            </Grid.Row>
 
+            <Grid.Row columns={4}>
                 <Grid.Column>
                     <Card fluid>
                         <Image size="small" centered src="../static/assets/slswebsite.jpg"></Image>
