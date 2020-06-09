@@ -145,7 +145,7 @@ export default () => {
             </Grid.Row>
 
 
-            <Grid.Row columns={4}>
+            {/* <Grid.Row columns={4}>
                 <Grid.Column>
                     <Card fluid>
                         <Image size="small" centered src="../static/assets/facialRec.png"></Image>
@@ -185,16 +185,10 @@ export default () => {
 
                 <Grid.Column>
                 </Grid.Column>
-            </Grid.Row>
+            </Grid.Row> */}
 
 
             <Grid.Row columns={4}>
-                <Grid.Column>
-                </Grid.Column>
-
-                <Grid.Column>
-                </Grid.Column>
-
                 <Grid.Column>
                     <Card fluid>
                         <Image size="small" centered src="../static/assets/vol.png"></Image>
@@ -229,9 +223,15 @@ export default () => {
                         A demonstration of how to use Folium & Pandas to generate interesting data driven maps.
                     </p>
                 </Grid.Column>
+                
+                <Grid.Column>
+                </Grid.Column>
+
+                <Grid.Column>
+                </Grid.Column>
             </Grid.Row>
 
-
+{/* 
             <Grid.Row columns={4}>
                 <Grid.Column>
                     <Card fluid>
@@ -272,14 +272,14 @@ export default () => {
 
                 <Grid.Column>                    
                 </Grid.Column>
-            </Grid.Row>
+            </Grid.Row> */}
 
 
-            <Grid.Row columns={4}>
+            {/* <Grid.Row columns={4}>
                 <Grid.Column>
                 </Grid.Column>
 
-                <Grid.Column>                    
+                <Grid.Column>
                 </Grid.Column>
 
                 <Grid.Column>
@@ -313,10 +313,10 @@ export default () => {
                         A user is able to search for any file on any OS. 
                     </p>
                 </Grid.Column>
-            </Grid.Row>
+            </Grid.Row> */}
 
 
-            <Grid.Row columns={4}>
+            {/* <Grid.Row columns={4}>
                 <Grid.Column>
                     <Card fluid>
                         <Image size="small" centered src="../static/assets/weather.png"></Image>
@@ -359,7 +359,7 @@ export default () => {
 
                 <Grid.Column>                    
                 </Grid.Column>
-            </Grid.Row>
+            </Grid.Row> */}
 
        </Grid>
     );  
