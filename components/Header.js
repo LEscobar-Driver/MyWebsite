@@ -27,8 +27,8 @@ class Header extends Component {
             <Menu inverted>
                 <Menu.Item header>
                     <div>
-                        {/* <Image alt=" " avatar size="mini" src='../static/assets/favicon.ico' style={{ marginRight: '10px' }}></Image> */}
-                        <b>Blockchain Developer / Software Engineer</b>
+                        <Image alt=" " avatar size="mini" src='../static/assets/favicon.ico' style={{ marginRight: '10px' }}></Image>
+                        <b>Blockchain Veteran / Software Engineer</b>
                         <Image alt=" " circular inline size="mini" src='../static/assets/SE.jpg' style={{ marginLeft: '10px' }}></Image>
                     </div>
                 </Menu.Item>

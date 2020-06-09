@@ -28,7 +28,7 @@ class Aboutme extends Component {
                             <span style={{"color":"red"}}> Blockchain Developer </span> and a professional 
                             <span style={{"color":"red"}}> Software Engineer </span>
                             <span style={{"color":"white"}}> / </span>
-                            <span style={{"color":"red"}}> SDET</span>
+                            <span style={{"color":"red"}}> SDET</span>.
                             </span>
                         </p>
                     </Grid.Column>
