@@ -10,9 +10,48 @@ export default () => {
                 <Grid.Column>
                 </Grid.Column>
 
-                <Grid.Column>                    
+                <Grid.Column>
                 </Grid.Column>
 
+                <Grid.Column>
+                    <Card fluid>
+                        <Image size="small" centered src="../static/assets/pytest.jpg"></Image>
+                        <Card.Content>
+                            <Card.Header>Advanced Flask_SqlAlchemy Testing</Card.Header>
+                            <Card.Meta>Unittest, Pytest, Conftest, Coverage</Card.Meta>
+                            <Card.Description>Testing suite which automates all model testing from conftest.py file.</Card.Description>
+                            <div style={{ marginTop: '10px' }}>
+                                <Link route="https://github.com/LEscobar-Driver/Code/tree/master/Testing">
+                                    <a target="_blank">Source Code</a>
+                                </Link>
+                            </div>
+                        </Card.Content>
+                    </Card>
+                </Grid.Column>
+
+                <Grid.Column>
+                    <List bulleted style={{"color":"white"}} as="h2">
+                        <List.Item>
+                            Makefile execution
+                        </List.Item>
+                        <List.Item>
+                            Pytest
+                        </List.Item>
+                        <List.Item>
+                            Unittest
+                        </List.Item>
+                        <List.Item>
+                            HTML & XML coverage report generation
+                        </List.Item>
+                    </List>
+
+                    <p style={{"color":"white"}}>
+                        All controls for tests reside in conftest.py & execution commands are in Makefile. 
+                    </p>
+                </Grid.Column>
+            </Grid.Row>
+
+            <Grid.Row columns={4}>
                 <Grid.Column>
                     <Card fluid>
                         <Image size="small" centered src="../static/assets/authenticating.png"></Image>
@@ -47,13 +86,25 @@ export default () => {
                         into CI (continuous integration) lifecycle. The purpose of these endpoints tests are to 
                         ensure that these inhouse picture recognition endpoints perform as expected. Includes 22 unittest 
                         which hit our developement end points. Data to run unittest has been excluded for 
-                        security concerns. 
+                        security concerns.
                     </p>
+                </Grid.Column>
+                
+                <Grid.Column>
+                </Grid.Column>
+
+                <Grid.Column>
                 </Grid.Column>
             </Grid.Row>
 
 
             <Grid.Row columns={4}>
+                <Grid.Column>
+                </Grid.Column>
+
+                <Grid.Column>
+                </Grid.Column>
+
                 <Grid.Column>
                     <Card fluid>
                         <Image size="medium" centered src="../static/assets/fliptix.png"></Image>
@@ -89,12 +140,6 @@ export default () => {
                         test our inhouse fliptix application which we engineered for a client. The app allows 
                         users to purchase tickets and resell them. 
                     </p>
-                </Grid.Column>
-
-                <Grid.Column>
-                </Grid.Column>
-
-                <Grid.Column>                    
                 </Grid.Column>
             </Grid.Row>
        </Grid>

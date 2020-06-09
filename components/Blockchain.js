@@ -27,7 +27,7 @@ export default () => {
                 <Grid.Column>
                     <List bulleted style={{"color":"white"}} as="h2">
                         <List.Item>
-                            Full stack ethereum dapp.
+                            Project not maintained.
                         </List.Item>
                         <List.Item>
                             Ethereum Solidity Smart contract back end.
@@ -36,10 +36,12 @@ export default () => {
                             React & Next js front end.
                         </List.Item>
                         <List.Item>
-                            Live on Rinkeby testnet & https://decentalizedkickstarter.herokuapp.com
+                            Live on Rinkeby testnet.
                         </List.Item>
                         <List.Item>
-                            Metamask is required.
+                            <Link route="https://decentalizedkickstarter.herokuapp.com">
+                                <a target="_blank">Website Link</a>
+                            </Link>
                         </List.Item>
                     </List>
 
