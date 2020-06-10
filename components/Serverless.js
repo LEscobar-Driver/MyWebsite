@@ -127,7 +127,7 @@ export default () => {
                     </List>
 
                     <p style={{"color":"white"}}>
-                        Two seperate lambdas with a suite of layers attached. One lambda is triggered by an SNS event and the other lambda is triggered by an api gateway event. Lambdas have full S3 permissions.
+                        Two seperate lambdas with a suite of layers attached. One lambda is triggered by API Gateway-->SNS event-->Lambda and the other by an API Gateway endpoint. Lambdas have full S3 permissions.
                     </p>
                 </Grid.Column>
             </Grid.Row>
