@@ -33,10 +33,7 @@ export default () => {
                 <Grid.Column>
                     <List bulleted style={{"color":"white"}} as="h2">
                         <List.Item>
-                            Backend python code.
-                        </List.Item>
-                        <List.Item>
-                            Pyperclip code demonstration.
+                            Pyperclip.
                         </List.Item>
                         <List.Item>
                             Extracts all emails and phone numbers from clipboard.
@@ -44,8 +41,8 @@ export default () => {
                     </List>
 
                     <p style={{"color":"white"}}>
-                        A python backend tool I built to extract phone numbers and emails by copying text with a mouse
-                        clipboard or keyboard. The user copies the text and runs this code. Any matches found are printed into
+                        Functions to extract phone numbers and emails by copying text with a mouse
+                        clipboard or keyboard. The user copies the text and runs this code in terminal. Any matches found are printed into
                         the console.
                     </p>
                 </Grid.Column>
@@ -72,20 +69,16 @@ export default () => {
                 <Grid.Column>
                     <List bulleted style={{"color":"white"}} as="h2">
                         <List.Item>
-                            Backend python code.
-                        </List.Item>
-                        <List.Item>
                             Corrects for user misspelled words. Returns 6 matches total with a 75% 
                             similarity rating.
                         </List.Item>
                         <List.Item>
-                            Demonstrate how the difflib python library is a great tool for comparing text and 
-                            producing reports.
+                            Difflib
                         </List.Item>
                     </List>
 
                     <p style={{"color":"white"}}>
-                        A python backend tool. A user runs the program through their console. If a word is misspelled the 
+                        If a word is misspelled the 
                         program returns 6 potential corrections with a 75% match. Returns the definitoin of whatever 
                         word the user typed into their console.
                     </p>
@@ -125,20 +118,18 @@ export default () => {
                 <Grid.Column>
                     <List bulleted style={{"color":"white"}} as="h2">
                         <List.Item>
-                            Backend python code.
+                            US Geological Service data feed.
                         </List.Item>
                         <List.Item>
-                            Uses the US Geological Service for its data feed. Demonstrates how to use public 
-                            facing APIs to extract valuable data. Prints data into the user console in a clear 
-                            format.
+                            API
                         </List.Item>
                         <List.Item>
-                            Compact and effective back end tool for seeing global earthquakes.
+                            JSON
                         </List.Item>
                     </List>
 
                     <p style={{"color":"white"}}>
-                        A user runs this backend code through their console. The code prints out small, medium, & 
+                        Locally run. The code prints out small, medium, & 
                         large earthquakes that have occured in the current month. 
                     </p>
                 </Grid.Column>
@@ -208,22 +199,19 @@ export default () => {
                 <Grid.Column>
                     <List bulleted style={{"color":"white"}} as="h2">
                         <List.Item>
-                            Backend python code.
+                            Folium
                         </List.Item>
                         <List.Item>
-                            Returns a map named "Map1.html" which the user can open and see all North American volcanoes 
-                            categorized by their height in either green, orange, or red.
-                        </List.Item>
-                        <List.Item>
-                            Uses Folium & Pandas.
+                            Pandas
                         </List.Item>
                     </List>
 
                     <p style={{"color":"white"}}>
-                        A demonstration of how to use Folium & Pandas to generate interesting data driven maps.
+                        Returns a map named "Map1.html" which the user can open and see all North American volcanoes 
+                        categorized by their height in either green, orange, or red.
                     </p>
                 </Grid.Column>
-                
+
                 <Grid.Column>
                 </Grid.Column>
 

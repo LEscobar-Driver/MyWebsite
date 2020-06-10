@@ -33,23 +33,23 @@ export default () => {
                 <Grid.Column>
                     <List bulleted style={{"color":"white"}} as="h2">
                         <List.Item>
-                            Full stack javascript application.
+                            Full stack.
                         </List.Item>
                         <List.Item>
                             Nodejs, PostgreSQL, React, Redux, nodemon, babel, Shell, HTML, JS, CSS.
                         </List.Item>
                         <List.Item>
-                            Backend sql db with tables and shell scripts.
+                            Db tables and shell scripts.
                         </List.Item>
                         <List.Item>
-                            Includes Restful API for users.
+                            REST API
                         </List.Item>
                     </List>
 
                     <p style={{"color":"white"}}>
-                        A full stack js application I built. Backend includes scipts to reset/configure sql db plus
-                        db templates. Local host server runs on port 5000. Restful API to get any Dragon or a Dragons
-                        generation breed status. 
+                        Backend includes scipts to reset/configure sql db plus
+                        db templates. Runs on port 5000. Rest api to get any Dragon or a Dragons
+                        generation breed status.
                     </p>
                 </Grid.Column>
             </Grid.Row>
